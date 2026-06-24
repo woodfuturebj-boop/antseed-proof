@@ -1,0 +1,11 @@
+{
+  "providerName": "Surplus Value Router",
+  "peerId": "c50de6922b00677c93007c01924586de887ced7b",
+  "agentId": 56687,
+  "sellerWallet": "0xc50DE6922b00677c93007c01924586dE887ced7b",
+  "chain": "base-mainnet",
+  "settlementAsset": "USDC",
+  "githubProof": "https://raw.githubusercontent.com/woodfuturebj-boop/antseed-proof/HEAD/antseed.json",
+  "domainProof": "https://woodfuturebj-boop.github.io/.well-known/antseed.json",
+  "operator": "woodfuturebj-boop"
+}
