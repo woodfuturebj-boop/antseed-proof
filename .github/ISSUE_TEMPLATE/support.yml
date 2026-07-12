@@ -1,0 +1,36 @@
+name: Connection support
+description: Report a reproducible connection or invocation problem.
+title: "[Support] Connection issue"
+labels: ["support"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Never paste private keys, seed phrases, API keys, wallet credentials, or complete environment files.
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Failing stage
+      options:
+        - Install or start
+        - Fund buyer
+        - Pin provider
+        - List models
+        - Invoke model
+        - Payment or receipt
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: AntSeed CLI, Node.js, and operating system versions.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps and redacted output
+      description: Include the exact command and redacted error. Remove all sensitive values.
+    validations:
+      required: true

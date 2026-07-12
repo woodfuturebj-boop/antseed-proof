@@ -33,19 +33,18 @@ c50de6922b00677c93007c01924586de887ced7b@gpt-5.4
 - Public endpoint: `192.220.28.51:6882`
 - Verification domain: `https://woodfuturebj-boop.github.io`
 
-## Primary Services
+## Featured Services
 
-The live service list is published through AntSeed metadata. Current primary services include:
+The first beta onboarding page highlights five services:
 
-- `gpt-5.4`
-- `gpt-5.4-mini`
-- `gpt-5.2-codex`
-- `gpt-5.3-codex`
 - `opus-4.7`
 - `opus-4.8`
-- `glm-5`
-- `glm-5.1`
-- `grok-4.3`
+- `claude-sonnet-5`
+- `gpt-5.4`
+- `glm-5.2`
+
+The broader catalog remains advertised for compatibility. Featured status is an
+onboarding and measurement decision, not a claim that other services were removed.
 
 Run this to inspect the live catalog and current prices:
 
@@ -59,3 +58,11 @@ antseed network peer c50de6922b00677c93007c01924586de887ced7b
 - Prices are monitored against upstream raw cost.
 - No private keys, API keys, or credentials are stored in this repository.
 - No self-trading or fake traffic.
+
+## Beta and Support
+
+- [External buyer beta](https://github.com/woodfuturebj-boop/antseed-proof/issues/new?template=beta.yml)
+- [Connection support](https://github.com/woodfuturebj-boop/antseed-proof/issues/new?template=support.yml)
+
+Never include private keys, seed phrases, API keys, wallet credentials, or complete
+environment files in an issue.

@@ -1,0 +1,43 @@
+name: External buyer beta
+description: Request onboarding help for a real external AntSeed buyer.
+title: "[Beta] Buyer onboarding"
+labels: ["beta"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This beta is for independent external buyers. Do not submit private keys, seed phrases, API keys, or wallet credentials.
+  - type: dropdown
+    id: integration
+    attributes:
+      label: Integration
+      options:
+        - OpenAI-compatible client
+        - Claude Code
+        - Pi
+        - LangChain
+        - Hermes
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Preferred model
+      placeholder: opus-4.7
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Intended use
+      description: Briefly describe the real workload and expected usage frequency.
+    validations:
+      required: true
+  - type: checkboxes
+    id: independence
+    attributes:
+      label: Buyer declaration
+      options:
+        - label: I am not the seller operator and will not generate artificial volume or self-trading activity.
+          required: true
