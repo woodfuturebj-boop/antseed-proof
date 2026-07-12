@@ -34,6 +34,14 @@ body:
       description: Briefly describe the real workload and expected usage frequency.
     validations:
       required: true
+  - type: input
+    id: buyer-hash
+    attributes:
+      label: Buyer peer SHA-256
+      description: Run the command below locally and submit only the 64-character hash, never a private key.
+      placeholder: printf '%s' 'YOUR_BUYER_PEER_ID' | tr '[:upper:]' '[:lower:]' | shasum -a 256
+    validations:
+      required: true
   - type: checkboxes
     id: independence
     attributes:
