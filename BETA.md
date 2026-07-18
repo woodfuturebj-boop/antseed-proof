@@ -13,6 +13,15 @@ antseed buyer connection set --peer c50de6922b00677c93007c01924586de887ced7b
 curl -s http://127.0.0.1:8377/v1/models | jq '.data[].id'
 ```
 
+Then replace the message below with a task you actually need completed. Do not
+send artificial traffic just to test the route.
+
+```bash
+curl http://127.0.0.1:8377/v1/chat/completions \
+  -H "content-type: application/json" \
+  -d '{"model":"opus-4.7","messages":[{"role":"user","content":"REPLACE WITH YOUR REAL TASK"}]}'
+```
+
 Start with one of these featured services:
 
 - `opus-4.7`
