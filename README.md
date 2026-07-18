@@ -61,6 +61,7 @@ antseed network peer c50de6922b00677c93007c01924586de887ced7b
 
 ## Beta and Support
 
+- [24-hour external buyer guide](BETA.md)
 - [Beta overview and acceptance criteria](https://github.com/woodfuturebj-boop/antseed-proof/issues/1)
 - [External buyer beta](https://github.com/woodfuturebj-boop/antseed-proof/issues/new?template=beta.yml)
 - [Connection support](https://github.com/woodfuturebj-boop/antseed-proof/issues/new?template=support.yml)

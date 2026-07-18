@@ -7,6 +7,21 @@ body:
     attributes:
       value: |
         This beta is for independent external buyers. Do not submit private keys, seed phrases, API keys, or wallet credentials.
+
+        You can request setup help before creating a buyer. When ready, pin this provider with:
+        `antseed buyer connection set --peer c50de6922b00677c93007c01924586de887ced7b`
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Current stage
+      options:
+        - I need help installing a buyer
+        - My buyer is running but not funded
+        - My buyer is funded but not pinned
+        - The provider is pinned but my real workload fails
+        - I completed a real external call
+    validations:
+      required: true
   - type: dropdown
     id: integration
     attributes:
@@ -37,9 +52,21 @@ body:
   - type: input
     id: buyer-hash
     attributes:
-      label: Buyer peer SHA-256
-      description: Run the command below locally and submit only the 64-character hash, never a private key.
-      placeholder: printf '%s' 'YOUR_BUYER_PEER_ID' | tr '[:upper:]' '[:lower:]' | shasum -a 256
+      label: Buyer peer SHA-256 (optional until installed)
+      description: After your buyer exists, hash its peer ID locally and submit only the 64-character SHA-256, never a private key.
+      placeholder: 64 hexadecimal characters
+  - type: dropdown
+    id: source
+    attributes:
+      label: Discovery source
+      options:
+        - AntSeed network browse
+        - AntFeed MCP or Explorer
+        - Provider connection page
+        - GitHub
+        - X / Twitter
+        - Direct referral
+        - Other
     validations:
       required: true
   - type: checkboxes
@@ -48,4 +75,6 @@ body:
       label: Buyer declaration
       options:
         - label: I am not the seller operator and will not generate artificial volume or self-trading activity.
+          required: true
+        - label: I intend to connect a real workload and can test the setup within 24 hours.
           required: true
