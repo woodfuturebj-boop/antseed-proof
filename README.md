@@ -78,7 +78,7 @@ The beta onboarding page highlights ten services. The order below follows the
 latest published AntSeed user-demand evidence and active adoption pricing:
 
 - `claude-opus-4.6` - highest-user-demand route in the July 19 snapshot
-- `opus-4.7` - second in the snapshot and the primary controlled adoption route
+- `claude-opus-4.7` / `opus-4.7` - lower-priced primary alias plus the official demand-name route for the same high-demand upstream
 - `gpt-5.5` - subsidized high-demand adoption route
 - `claude-opus-4.8` - high-demand frontier coding route
 - `glm-5.2` - high-demand multilingual route

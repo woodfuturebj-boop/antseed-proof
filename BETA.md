@@ -48,13 +48,13 @@ c50de6922b00677c93007c01924586de887ced7b@claude-fable-5
 ```bash
 curl http://127.0.0.1:8377/v1/chat/completions \
   -H "content-type: application/json" \
-  -d '{"model":"c50de6922b00677c93007c01924586de887ced7b@opus-4.7","messages":[{"role":"user","content":"REPLACE WITH YOUR REAL TASK"}]}'
+  -d '{"model":"c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.7","messages":[{"role":"user","content":"REPLACE WITH YOUR REAL TASK"}]}'
 ```
 
 Start with one of these featured services:
 
-- `opus-4.7` - primary controlled adoption route; published snapshot `$0.3061375` input / `$1.5306875` output per 1M tokens
-- `claude-opus-4.7` - rank-one canonical alias; published snapshot `$0.1940598` input / `$0.970299` output per 1M tokens
+- `claude-opus-4.7` - primary lower-priced canonical alias for the same high-demand Opus 4.7 upstream; published snapshot `$0.1940598` input / `$0.970299` output per 1M tokens
+- `opus-4.7` - official demand-name route; published snapshot `$0.3061375` input / `$1.5306875` output per 1M tokens
 - `claude-opus-4-7` - rank-one compatibility alias; published snapshot `$0.1940598` input / `$0.970299` output per 1M tokens
 - `claude-opus-4.6` - highest-user-demand route in the July 19 snapshot
 - `gpt-5.5` - subsidized high-demand rank-one adoption route
@@ -107,8 +107,8 @@ Suggested agent instruction:
 
 ```text
 Use AntFeed MCP to look up "Surplus Value Router | GPT/GLM/Claude". Verify
-seller 0xc50DE6922b00677c93007c01924586dE887ced7b, inspect opus-4.7 first,
-then gpt-5.5, claude-opus-4.6, and glm-5.2 pricing, compare it with
+seller 0xc50DE6922b00677c93007c01924586dE887ced7b, inspect claude-opus-4.7 first,
+then opus-4.7, gpt-5.5, and glm-5.2 pricing, compare it with
 the signed direct peer catalog, and ask me before create_session.
 ```
 
