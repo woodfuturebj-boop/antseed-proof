@@ -34,11 +34,12 @@ current high-demand direct routes:
 ```text
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.4
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.5
+c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol-pro
 c50de6922b00677c93007c01924586de887ced7b@glm-5.2
+c50de6922b00677c93007c01924586de887ced7b@kimi-k3
 c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.8
 c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6
 c50de6922b00677c93007c01924586de887ced7b@claude-sonnet-5
-c50de6922b00677c93007c01924586de887ced7b@gemini-3.1-pro-preview
 c50de6922b00677c93007c01924586de887ced7b@claude-fable-5
 ```
 
@@ -46,11 +47,12 @@ Copy-ready route pages:
 
 - [`gpt-5.4`](https://woodfuturebj-boop.github.io/?model=gpt-5.4#first-workload)
 - [`gpt-5.5`](https://woodfuturebj-boop.github.io/?model=gpt-5.5#first-workload)
+- [`gpt-5.6-sol-pro`](https://woodfuturebj-boop.github.io/?model=gpt-5.6-sol-pro#first-workload)
 - [`glm-5.2`](https://woodfuturebj-boop.github.io/?model=glm-5.2#first-workload)
+- [`kimi-k3`](https://woodfuturebj-boop.github.io/?model=kimi-k3#first-workload)
 - [`claude-opus-4.8`](https://woodfuturebj-boop.github.io/?model=claude-opus-4.8#first-workload)
 - [`claude-opus-4.6`](https://woodfuturebj-boop.github.io/?model=claude-opus-4.6#first-workload)
 - [`claude-sonnet-5`](https://woodfuturebj-boop.github.io/?model=claude-sonnet-5#first-workload)
-- [`gemini-3.1-pro-preview`](https://woodfuturebj-boop.github.io/?model=gemini-3.1-pro-preview#first-workload)
 - [`claude-fable-5`](https://woodfuturebj-boop.github.io/?model=claude-fable-5#first-workload)
 
 ## Provider
@@ -69,15 +71,15 @@ demand signals and active adoption pricing experiments:
 
 - `gpt-5.4` - high-demand general route
 - `gpt-5.5` - subsidized high-demand adoption route
+- `gpt-5.6-sol-pro` - high-demand rank-one reasoning route
 - `glm-5.2` - high-demand multilingual route
+- `kimi-k3` - rank-one agent and coding route
 - `claude-opus-4.8` - high-demand frontier coding route
 - `claude-opus-4.6` - high-demand rank-one coding route
-- `gemini-3.1-pro-preview` - Gemini reasoning route
 - `claude-fable-5` - long-form and coding route
 
 Additional featured routes:
 
-- `minimax-m2.7`
 - `opus-4.7`
 - `claude-sonnet-5`
 
