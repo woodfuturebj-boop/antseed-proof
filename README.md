@@ -21,7 +21,7 @@ curl -H "x-antseed-pin-peer: c50de6922b00677c93007c01924586de887ced7b" http://12
 Model-prefix routing:
 
 ```text
-c50de6922b00677c93007c01924586de887ced7b@gpt-5.4
+c50de6922b00677c93007c01924586de887ced7b@minimax-m2.7
 ```
 
 ## Provider
@@ -35,8 +35,10 @@ c50de6922b00677c93007c01924586de887ced7b@gpt-5.4
 
 ## Featured Services
 
-The first beta onboarding page highlights five services:
+The beta onboarding page highlights six services. The lowest-cost first-workload
+route is listed first:
 
+- `minimax-m2.7`
 - `opus-4.7`
 - `opus-4.8`
 - `claude-sonnet-5`
