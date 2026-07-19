@@ -18,10 +18,13 @@ Per-request routing also works:
 curl -H "x-antseed-pin-peer: c50de6922b00677c93007c01924586de887ced7b" http://127.0.0.1:8377/v1/models
 ```
 
-Model-prefix routing:
+For a single real workload without replacing a saved connection, use one of the
+current high-demand direct routes:
 
 ```text
-c50de6922b00677c93007c01924586de887ced7b@minimax-m2.7
+c50de6922b00677c93007c01924586de887ced7b@gpt-5.4
+c50de6922b00677c93007c01924586de887ced7b@glm-5.2
+c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.8
 ```
 
 ## Provider
@@ -35,15 +38,18 @@ c50de6922b00677c93007c01924586de887ced7b@minimax-m2.7
 
 ## Featured Services
 
-The beta onboarding page highlights six services. The lowest-cost first-workload
-route is listed first:
+The beta onboarding page highlights six services. Three have current demand
+signals and active rank-one pricing experiments:
+
+- `gpt-5.4` - high-demand general route
+- `glm-5.2` - high-demand multilingual route
+- `claude-opus-4.8` - high-demand frontier coding route
+
+Additional featured routes:
 
 - `minimax-m2.7`
 - `opus-4.7`
-- `opus-4.8`
 - `claude-sonnet-5`
-- `gpt-5.4`
-- `glm-5.2`
 
 The broader catalog remains advertised for compatibility. Featured status is an
 onboarding and measurement decision, not a claim that other services were removed.
@@ -53,6 +59,10 @@ Run this to inspect the live catalog and current prices:
 ```bash
 antseed network peer c50de6922b00677c93007c01924586de887ced7b
 ```
+
+The signed peer catalog is the source of truth. Default discovery pages and
+third-party directories can cache older prices, so verify this command before
+funding or creating a paid session.
 
 ## Operating Policy
 

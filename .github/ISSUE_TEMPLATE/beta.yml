@@ -39,7 +39,8 @@ body:
     id: model
     attributes:
       label: Preferred model
-      placeholder: opus-4.7
+      description: Current high-demand direct routes are gpt-5.4, glm-5.2, and claude-opus-4.8.
+      placeholder: gpt-5.4
     validations:
       required: true
   - type: textarea

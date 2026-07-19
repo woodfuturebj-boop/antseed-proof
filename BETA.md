@@ -13,30 +13,43 @@ antseed buyer connection set --peer c50de6922b00677c93007c01924586de887ced7b
 curl -s http://127.0.0.1:8377/v1/models | jq '.data[].id'
 ```
 
-Then replace the message below with a task you actually need completed. The
-model-prefix route pins this provider for one request without replacing a saved
-connection. Do not send artificial traffic just to test the route.
+Then choose a direct route and replace the message below with a task you actually
+need completed. The model-prefix route pins this provider for one request without
+replacing a saved connection. Do not send artificial traffic just to test the
+route.
+
+Current high-demand routes:
+
+```text
+c50de6922b00677c93007c01924586de887ced7b@gpt-5.4
+c50de6922b00677c93007c01924586de887ced7b@glm-5.2
+c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.8
+```
 
 ```bash
 curl http://127.0.0.1:8377/v1/chat/completions \
   -H "content-type: application/json" \
-  -d '{"model":"c50de6922b00677c93007c01924586de887ced7b@minimax-m2.7","messages":[{"role":"user","content":"REPLACE WITH YOUR REAL TASK"}]}'
+  -d '{"model":"c50de6922b00677c93007c01924586de887ced7b@gpt-5.4","messages":[{"role":"user","content":"REPLACE WITH YOUR REAL TASK"}]}'
 ```
 
 Start with one of these featured services:
 
-- `minimax-m2.7` - lowest-cost first workload in the published snapshot
+- `gpt-5.4` - current high-demand general route
+- `glm-5.2` - current high-demand multilingual route
+- `claude-opus-4.8` - current high-demand frontier coding route
+- `minimax-m2.7` - lowest-cost featured first-workload route
 - `opus-4.7`
-- `opus-4.8`
 - `claude-sonnet-5`
-- `gpt-5.4`
-- `glm-5.2`
 
 Inspect the signed live catalog and pricing before use:
 
 ```bash
 antseed network peer c50de6922b00677c93007c01924586de887ced7b
 ```
+
+Use this signed peer catalog as the source of truth. Default discovery and
+third-party directories may cache an older price snapshot. If a cached listing
+differs, do not create a paid session until the direct peer lookup is reviewed.
 
 ## Agent Path: AntFeed MCP
 
@@ -59,15 +72,16 @@ This seller is indexed in AntFeed under wallet
 }
 ```
 
-Use `lookup` and `get_pricing` first. `create_session` can move buyer funds, so
-review the seller, service, and deposit and keep host confirmation enabled.
+Use `lookup` and `get_pricing` first. Compare the result with the direct peer
+lookup above. `create_session` can move buyer funds, so review the seller,
+service, and deposit and keep host confirmation enabled.
 
 Suggested agent instruction:
 
 ```text
 Use AntFeed MCP to look up "Surplus Value Router". Verify seller
-0xc50DE6922b00677c93007c01924586dE887ced7b, inspect minimax-m2.7 pricing,
-and ask me before create_session.
+0xc50DE6922b00677c93007c01924586dE887ced7b, inspect gpt-5.4 pricing,
+compare it with the signed direct peer catalog, and ask me before create_session.
 ```
 
 ## Help and Attribution
