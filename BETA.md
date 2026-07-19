@@ -44,7 +44,7 @@ c50de6922b00677c93007c01924586de887ced7b@claude-fable-5
 ```bash
 curl http://127.0.0.1:8377/v1/chat/completions \
   -H "content-type: application/json" \
-  -d '{"model":"c50de6922b00677c93007c01924586de887ced7b@gpt-5.4","messages":[{"role":"user","content":"REPLACE WITH YOUR REAL TASK"}]}'
+  -d '{"model":"c50de6922b00677c93007c01924586de887ced7b@gpt-5.5","messages":[{"role":"user","content":"REPLACE WITH YOUR REAL TASK"}]}'
 ```
 
 Start with one of these featured services:
@@ -66,8 +66,8 @@ Inspect the signed live catalog and pricing before use:
 antseed network peer c50de6922b00677c93007c01924586de887ced7b
 ```
 
-Use this signed peer catalog as the source of truth. Default discovery and
-third-party directories may cache an older price snapshot. If a cached listing
+Use this signed peer catalog as the source of truth. AntFeed refreshes its
+provider directory hourly, and other discovery surfaces may also cache an older price snapshot. If a cached listing
 differs, do not create a paid session until the direct peer lookup is reviewed.
 
 ## Agent Path: AntFeed MCP
@@ -99,8 +99,8 @@ Suggested agent instruction:
 
 ```text
 Use AntFeed MCP to look up "Surplus Value Router | GPT/GLM/Claude". Verify
-seller 0xc50DE6922b00677c93007c01924586dE887ced7b, inspect gpt-5.4,
-glm-5.2, gemini-3.1-pro-preview, and claude-fable-5 pricing, compare it with
+seller 0xc50DE6922b00677c93007c01924586dE887ced7b, inspect gpt-5.5,
+claude-sonnet-5, claude-opus-4.6, and glm-5.2 pricing, compare it with
 the signed direct peer catalog, and ask me before create_session.
 ```
 

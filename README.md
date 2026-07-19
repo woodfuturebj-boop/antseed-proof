@@ -64,8 +64,8 @@ Copy-ready route pages:
 
 ## Featured Services
 
-The beta onboarding page highlights eight services. Five have current demand
-signals and active rank-one pricing experiments:
+The beta onboarding page highlights ten services. The routes below have current
+demand signals and active adoption pricing experiments:
 
 - `gpt-5.4` - high-demand general route
 - `gpt-5.5` - subsidized high-demand adoption route
@@ -90,8 +90,8 @@ Run this to inspect the live catalog and current prices:
 antseed network peer c50de6922b00677c93007c01924586de887ced7b
 ```
 
-The signed peer catalog is the source of truth. Default discovery pages and
-third-party directories can cache older prices, so verify this command before
+The signed peer catalog is the source of truth. AntFeed refreshes its provider
+directory hourly, and other discovery pages can cache older prices, so verify this command before
 funding or creating a paid session.
 
 ## Operating Policy
