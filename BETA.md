@@ -32,8 +32,10 @@ Current high-demand routes:
 
 ```text
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.4
+c50de6922b00677c93007c01924586de887ced7b@gpt-5.5
 c50de6922b00677c93007c01924586de887ced7b@glm-5.2
 c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.8
+c50de6922b00677c93007c01924586de887ced7b@claude-sonnet-5
 c50de6922b00677c93007c01924586de887ced7b@gemini-3.1-pro-preview
 c50de6922b00677c93007c01924586de887ced7b@claude-fable-5
 ```
@@ -47,6 +49,7 @@ curl http://127.0.0.1:8377/v1/chat/completions \
 Start with one of these featured services:
 
 - `gpt-5.4` - current high-demand general route
+- `gpt-5.5` - subsidized high-demand rank-one adoption route
 - `glm-5.2` - current high-demand multilingual route
 - `claude-opus-4.8` - current high-demand frontier coding route
 - `gemini-3.1-pro-preview` - current Gemini reasoning route
