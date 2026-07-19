@@ -3,7 +3,17 @@
 Use a real AntSeed buyer and a real workload to connect to `Surplus Value Router`.
 There is no reward for artificial traffic, self-trading, or test volume.
 
-## Fastest Path: Direct Pin
+## Fastest Path: AntStation Discover
+
+1. Install the official [AntStation desktop app](https://github.com/AntSeed/antseed/releases/latest).
+2. Fund the buyer with Base USDC.
+3. Open **Discover** and search for `Surplus Value Router`.
+4. Choose `Surplus Value Router | GPT/GLM/Claude`, select a service, and start a real chat.
+
+Selecting the Discover result pins both this provider and the service. Verify
+the displayed provider and live price before funding a session.
+
+## CLI Path: Direct Pin
 
 ```bash
 npm install -g @antseed/cli

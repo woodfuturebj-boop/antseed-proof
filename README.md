@@ -6,7 +6,17 @@ Public AntSeed verification proof and buyer connection guide for provider:
 
 ## Quick Connect
 
-AntSeed buyer auto-selection is disabled, so buyers must pin a peer explicitly.
+### AntStation Discover
+
+Install the official [AntStation desktop app](https://github.com/AntSeed/antseed/releases/latest),
+fund the buyer with Base USDC, then open **Discover**. Search for
+`Surplus Value Router`, choose `Surplus Value Router | GPT/GLM/Claude`, select
+the service you need, and start a real chat. Selecting the Discover result pins
+both this provider and the service.
+
+### CLI pin
+
+CLI buyer auto-selection is disabled, so buyers must pin a peer explicitly.
 
 ```bash
 antseed buyer connection set --peer c50de6922b00677c93007c01924586de887ced7b
