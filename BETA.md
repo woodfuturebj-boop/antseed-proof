@@ -7,7 +7,7 @@ There is no reward for artificial traffic, self-trading, or test volume.
 
 1. Install the official [AntStation desktop app](https://github.com/AntSeed/antseed/releases/latest) for macOS (Apple Silicon or Intel), Windows, or Linux.
 2. Fund the buyer with Base USDC.
-3. Open **Discover** and search for `opus-4.7` first, or search for `Surplus Value Router`.
+3. Open **Discover** and search for `opus-4.7`, `claude-opus-4.7`, or `claude-opus-4-7` first. These exact service names use the same high-demand upstream route. You can also search for `Surplus Value Router`.
 4. Choose `Surplus Value Router | GPT/GLM/Claude`, select a service, and start a real chat.
 
 Selecting the Discover result pins both this provider and the service. Verify
@@ -32,6 +32,8 @@ Current high-demand routes:
 
 ```text
 c50de6922b00677c93007c01924586de887ced7b@opus-4.7
+c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.7
+c50de6922b00677c93007c01924586de887ced7b@claude-opus-4-7
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.4
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.5
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol-pro
@@ -52,6 +54,8 @@ curl http://127.0.0.1:8377/v1/chat/completions \
 Start with one of these featured services:
 
 - `opus-4.7` - primary controlled adoption route; published snapshot `$0.3061375` input / `$1.5306875` output per 1M tokens
+- `claude-opus-4.7` - rank-one canonical alias; published snapshot `$0.1940598` input / `$0.970299` output per 1M tokens
+- `claude-opus-4-7` - rank-one compatibility alias; published snapshot `$0.1940598` input / `$0.970299` output per 1M tokens
 - `claude-opus-4.6` - highest-user-demand route in the July 19 snapshot
 - `gpt-5.5` - subsidized high-demand rank-one adoption route
 - `claude-opus-4.8` - current high-demand frontier coding route
