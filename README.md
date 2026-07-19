@@ -40,6 +40,8 @@ c50de6922b00677c93007c01924586de887ced7b@claude-opus-4-7
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.4
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.5
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol-pro
+c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-terra
+c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol
 c50de6922b00677c93007c01924586de887ced7b@glm-5.2
 c50de6922b00677c93007c01924586de887ced7b@kimi-k3
 c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.8
@@ -56,6 +58,8 @@ Copy-ready route pages:
 - [`gpt-5.4`](https://woodfuturebj-boop.github.io/?model=gpt-5.4#first-workload)
 - [`gpt-5.5`](https://woodfuturebj-boop.github.io/?model=gpt-5.5#first-workload)
 - [`gpt-5.6-sol-pro`](https://woodfuturebj-boop.github.io/?model=gpt-5.6-sol-pro#first-workload)
+- [`gpt-5.6-terra`](https://woodfuturebj-boop.github.io/routes/gpt-5.6-terra/) - current-demand rank-one route; published snapshot `$0.05` input / `$0.30` output per 1M tokens
+- [`gpt-5.6-sol`](https://woodfuturebj-boop.github.io/routes/gpt-5.6-sol/) - current-demand rank-one route; published snapshot `$0.10` input / `$0.60` output per 1M tokens
 - [`glm-5.2`](https://woodfuturebj-boop.github.io/?model=glm-5.2#first-workload)
 - [`kimi-k3`](https://woodfuturebj-boop.github.io/?model=kimi-k3#first-workload)
 - [`claude-opus-4.8`](https://woodfuturebj-boop.github.io/?model=claude-opus-4.8#first-workload)
