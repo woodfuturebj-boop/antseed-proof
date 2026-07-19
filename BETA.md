@@ -39,6 +39,7 @@ c50de6922b00677c93007c01924586de887ced7b@gpt-5.5
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol-pro
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-terra
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol
+c50de6922b00677c93007c01924586de887ced7b@gemini-3-5-flash
 c50de6922b00677c93007c01924586de887ced7b@glm-5.2
 c50de6922b00677c93007c01924586de887ced7b@kimi-k3
 c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.8
@@ -65,6 +66,7 @@ Start with one of these featured services:
 - `gpt-5.6-sol-pro` - high-demand rank-one reasoning route
 - `gpt-5.6-terra` - current-demand rank-one route; published snapshot `$0.05` input / `$0.30` output per 1M tokens
 - `gpt-5.6-sol` - current-demand rank-one route; published snapshot `$0.10` input / `$0.60` output per 1M tokens
+- `gemini-3-5-flash` - current-demand rank-one route; published snapshot `$0.104013` input / `$0.624073` output per 1M tokens
 - `claude-sonnet-5` - coding and agent route
 - `gpt-5.4` - current high-demand general route
 - `kimi-k3` - agent and coding route
