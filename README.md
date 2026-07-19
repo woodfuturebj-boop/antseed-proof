@@ -9,8 +9,8 @@ Public AntSeed verification proof and buyer connection guide for provider:
 ### AntStation Discover
 
 Install the official [AntStation desktop app](https://github.com/AntSeed/antseed/releases/latest),
-fund the buyer with Base USDC, then open **Discover**. Search for
-`Surplus Value Router`, choose `Surplus Value Router | GPT/GLM/Claude`, select
+fund the buyer with Base USDC, then open **Discover**. Search for `opus-4.7`
+first, or search for `Surplus Value Router`; choose `Surplus Value Router | GPT/GLM/Claude`, select
 the service you need, and start a real chat. Selecting the Discover result pins
 both this provider and the service.
 
@@ -32,6 +32,7 @@ For a single real workload without replacing a saved connection, use one of the
 current high-demand direct routes:
 
 ```text
+c50de6922b00677c93007c01924586de887ced7b@opus-4.7
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.4
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.5
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol-pro
@@ -45,6 +46,7 @@ c50de6922b00677c93007c01924586de887ced7b@claude-fable-5
 
 Copy-ready route pages:
 
+- [`opus-4.7`](https://woodfuturebj-boop.github.io/routes/opus-4.7/) - published snapshot `$0.3061375` input / `$1.5306875` output per 1M tokens
 - [`gpt-5.4`](https://woodfuturebj-boop.github.io/?model=gpt-5.4#first-workload)
 - [`gpt-5.5`](https://woodfuturebj-boop.github.io/?model=gpt-5.5#first-workload)
 - [`gpt-5.6-sol-pro`](https://woodfuturebj-boop.github.io/?model=gpt-5.6-sol-pro#first-workload)
@@ -66,22 +68,21 @@ Copy-ready route pages:
 
 ## Featured Services
 
-The beta onboarding page highlights ten services. The routes below have current
-demand signals and active adoption pricing experiments:
+The beta onboarding page highlights ten services. The order below follows the
+latest published AntSeed user-demand evidence and active adoption pricing:
 
-- `gpt-5.4` - high-demand general route
+- `claude-opus-4.6` - highest-user-demand route in the July 19 snapshot
+- `opus-4.7` - second in the snapshot and the primary controlled adoption route
 - `gpt-5.5` - subsidized high-demand adoption route
-- `gpt-5.6-sol-pro` - high-demand rank-one reasoning route
-- `glm-5.2` - high-demand multilingual route
-- `kimi-k3` - rank-one agent and coding route
 - `claude-opus-4.8` - high-demand frontier coding route
-- `claude-opus-4.6` - high-demand rank-one coding route
+- `glm-5.2` - high-demand multilingual route
+- `gpt-5.6-sol-pro` - high-demand rank-one reasoning route
+- `claude-sonnet-5` - coding and agent route
+- `gpt-5.4` - high-demand general route
+- `kimi-k3` - agent and coding route
 - `claude-fable-5` - long-form and coding route
 
-Additional featured routes:
-
-- `opus-4.7`
-- `claude-sonnet-5`
+[Demand evidence: AntSeed Top models by users, July 19](https://x.com/AntSeedAI/status/2078868465276874967).
 
 The broader catalog remains advertised for compatibility. Featured status is an
 onboarding and measurement decision, not a claim that other services were removed.

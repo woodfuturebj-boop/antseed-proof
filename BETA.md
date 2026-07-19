@@ -7,7 +7,7 @@ There is no reward for artificial traffic, self-trading, or test volume.
 
 1. Install the official [AntStation desktop app](https://github.com/AntSeed/antseed/releases/latest).
 2. Fund the buyer with Base USDC.
-3. Open **Discover** and search for `Surplus Value Router`.
+3. Open **Discover** and search for `opus-4.7` first, or search for `Surplus Value Router`.
 4. Choose `Surplus Value Router | GPT/GLM/Claude`, select a service, and start a real chat.
 
 Selecting the Discover result pins both this provider and the service. Verify
@@ -31,6 +31,7 @@ route.
 Current high-demand routes:
 
 ```text
+c50de6922b00677c93007c01924586de887ced7b@opus-4.7
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.4
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.5
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol-pro
@@ -45,21 +46,23 @@ c50de6922b00677c93007c01924586de887ced7b@claude-fable-5
 ```bash
 curl http://127.0.0.1:8377/v1/chat/completions \
   -H "content-type: application/json" \
-  -d '{"model":"c50de6922b00677c93007c01924586de887ced7b@gpt-5.5","messages":[{"role":"user","content":"REPLACE WITH YOUR REAL TASK"}]}'
+  -d '{"model":"c50de6922b00677c93007c01924586de887ced7b@opus-4.7","messages":[{"role":"user","content":"REPLACE WITH YOUR REAL TASK"}]}'
 ```
 
 Start with one of these featured services:
 
-- `gpt-5.4` - current high-demand general route
+- `opus-4.7` - primary controlled adoption route; published snapshot `$0.3061375` input / `$1.5306875` output per 1M tokens
+- `claude-opus-4.6` - highest-user-demand route in the July 19 snapshot
 - `gpt-5.5` - subsidized high-demand rank-one adoption route
-- `gpt-5.6-sol-pro` - high-demand rank-one reasoning route
-- `glm-5.2` - current high-demand multilingual route
-- `kimi-k3` - rank-one agent and coding route
 - `claude-opus-4.8` - current high-demand frontier coding route
-- `claude-opus-4.6` - current high-demand rank-one coding route
+- `glm-5.2` - current high-demand multilingual route
+- `gpt-5.6-sol-pro` - high-demand rank-one reasoning route
+- `claude-sonnet-5` - coding and agent route
+- `gpt-5.4` - current high-demand general route
+- `kimi-k3` - agent and coding route
 - `claude-fable-5` - current long-form and coding route
-- `opus-4.7`
-- `claude-sonnet-5`
+
+[Demand evidence: AntSeed Top models by users, July 19](https://x.com/AntSeedAI/status/2078868465276874967).
 
 Inspect the signed live catalog and pricing before use:
 
@@ -100,8 +103,8 @@ Suggested agent instruction:
 
 ```text
 Use AntFeed MCP to look up "Surplus Value Router | GPT/GLM/Claude". Verify
-seller 0xc50DE6922b00677c93007c01924586dE887ced7b, inspect gpt-5.5,
-claude-sonnet-5, claude-opus-4.6, and glm-5.2 pricing, compare it with
+seller 0xc50DE6922b00677c93007c01924586dE887ced7b, inspect opus-4.7 first,
+then gpt-5.5, claude-opus-4.6, and glm-5.2 pricing, compare it with
 the signed direct peer catalog, and ask me before create_session.
 ```
 
