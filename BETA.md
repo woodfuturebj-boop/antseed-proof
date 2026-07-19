@@ -24,6 +24,8 @@ Current high-demand routes:
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.4
 c50de6922b00677c93007c01924586de887ced7b@glm-5.2
 c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.8
+c50de6922b00677c93007c01924586de887ced7b@gemini-3.1-pro-preview
+c50de6922b00677c93007c01924586de887ced7b@claude-fable-5
 ```
 
 ```bash
@@ -37,6 +39,8 @@ Start with one of these featured services:
 - `gpt-5.4` - current high-demand general route
 - `glm-5.2` - current high-demand multilingual route
 - `claude-opus-4.8` - current high-demand frontier coding route
+- `gemini-3.1-pro-preview` - current Gemini reasoning route
+- `claude-fable-5` - current long-form and coding route
 - `minimax-m2.7` - lowest-cost featured first-workload route
 - `opus-4.7`
 - `claude-sonnet-5`
@@ -79,9 +83,10 @@ service, and deposit and keep host confirmation enabled.
 Suggested agent instruction:
 
 ```text
-Use AntFeed MCP to look up "Surplus Value Router". Verify seller
-0xc50DE6922b00677c93007c01924586dE887ced7b, inspect gpt-5.4 pricing,
-compare it with the signed direct peer catalog, and ask me before create_session.
+Use AntFeed MCP to look up "Surplus Value Router | GPT/GLM/Claude". Verify
+seller 0xc50DE6922b00677c93007c01924586dE887ced7b, inspect gpt-5.4,
+glm-5.2, gemini-3.1-pro-preview, and claude-fable-5 pricing, compare it with
+the signed direct peer catalog, and ask me before create_session.
 ```
 
 ## Help and Attribution

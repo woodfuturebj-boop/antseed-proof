@@ -39,7 +39,7 @@ body:
     id: model
     attributes:
       label: Preferred model
-      description: Current high-demand direct routes are gpt-5.4, glm-5.2, and claude-opus-4.8.
+      description: Current high-demand direct routes are gpt-5.4, glm-5.2, claude-opus-4.8, gemini-3.1-pro-preview, and claude-fable-5.
       placeholder: gpt-5.4
     validations:
       required: true

@@ -25,11 +25,21 @@ current high-demand direct routes:
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.4
 c50de6922b00677c93007c01924586de887ced7b@glm-5.2
 c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.8
+c50de6922b00677c93007c01924586de887ced7b@gemini-3.1-pro-preview
+c50de6922b00677c93007c01924586de887ced7b@claude-fable-5
 ```
+
+Copy-ready route pages:
+
+- [`gpt-5.4`](https://woodfuturebj-boop.github.io/?model=gpt-5.4#first-workload)
+- [`glm-5.2`](https://woodfuturebj-boop.github.io/?model=glm-5.2#first-workload)
+- [`claude-opus-4.8`](https://woodfuturebj-boop.github.io/?model=claude-opus-4.8#first-workload)
+- [`gemini-3.1-pro-preview`](https://woodfuturebj-boop.github.io/?model=gemini-3.1-pro-preview#first-workload)
+- [`claude-fable-5`](https://woodfuturebj-boop.github.io/?model=claude-fable-5#first-workload)
 
 ## Provider
 
-- Display name: `Surplus Value Router`
+- Network display name: `Surplus Value Router | GPT/GLM/Claude`
 - Agent ID: `56687`
 - Seller wallet: `0xc50DE6922b00677c93007c01924586dE887ced7b`
 - Settlement network: Base mainnet USDC
@@ -38,12 +48,14 @@ c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.8
 
 ## Featured Services
 
-The beta onboarding page highlights six services. Three have current demand
+The beta onboarding page highlights eight services. Five have current demand
 signals and active rank-one pricing experiments:
 
 - `gpt-5.4` - high-demand general route
 - `glm-5.2` - high-demand multilingual route
 - `claude-opus-4.8` - high-demand frontier coding route
+- `gemini-3.1-pro-preview` - Gemini reasoning route
+- `claude-fable-5` - long-form and coding route
 
 Additional featured routes:
 
