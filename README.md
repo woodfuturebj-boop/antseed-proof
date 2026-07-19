@@ -8,7 +8,8 @@ Public AntSeed verification proof and buyer connection guide for provider:
 
 ### AntStation Discover
 
-Install the official [AntStation desktop app](https://github.com/AntSeed/antseed/releases/latest),
+Install the official [AntStation desktop app](https://github.com/AntSeed/antseed/releases/latest)
+for macOS (Apple Silicon or Intel), Windows, or Linux,
 fund the buyer with Base USDC, then open **Discover**. Search for `opus-4.7`
 first, or search for `Surplus Value Router`; choose `Surplus Value Router | GPT/GLM/Claude`, select
 the service you need, and start a real chat. Selecting the Discover result pins

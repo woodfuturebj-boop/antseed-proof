@@ -5,7 +5,7 @@ There is no reward for artificial traffic, self-trading, or test volume.
 
 ## Fastest Path: AntStation Discover
 
-1. Install the official [AntStation desktop app](https://github.com/AntSeed/antseed/releases/latest).
+1. Install the official [AntStation desktop app](https://github.com/AntSeed/antseed/releases/latest) for macOS (Apple Silicon or Intel), Windows, or Linux.
 2. Fund the buyer with Base USDC.
 3. Open **Discover** and search for `opus-4.7` first, or search for `Surplus Value Router`.
 4. Choose `Surplus Value Router | GPT/GLM/Claude`, select a service, and start a real chat.
