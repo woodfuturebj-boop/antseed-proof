@@ -85,7 +85,7 @@ latest published AntSeed user-demand evidence and active adoption pricing:
 
 - `claude-opus-4.6` - highest-user-demand route in the July 19 snapshot
 - `claude-opus-4.7` / `opus-4.7` - lower-priced primary alias plus the official demand-name route for the same high-demand upstream
-- `gpt-5.5` - subsidized high-demand adoption route
+- `gpt-5.5` - published high-demand rank-one route
 - `claude-opus-4.8` - high-demand frontier coding route
 - `glm-5.2` - high-demand multilingual route
 - `gpt-5.6-sol-pro` - high-demand rank-one reasoning route

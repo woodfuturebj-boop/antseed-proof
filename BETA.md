@@ -60,7 +60,7 @@ Start with one of these featured services:
 - `opus-4.7` - official demand-name route; published snapshot `$0.3061375` input / `$1.5306875` output per 1M tokens
 - `claude-opus-4-7` - rank-one compatibility alias; published snapshot `$0.1940598` input / `$0.970299` output per 1M tokens
 - `claude-opus-4.6` - highest-user-demand route in the July 19 snapshot
-- `gpt-5.5` - subsidized high-demand rank-one adoption route
+- `gpt-5.5` - published high-demand rank-one route
 - `claude-opus-4.8` - current high-demand frontier coding route
 - `glm-5.2` - current high-demand multilingual route
 - `gpt-5.6-sol-pro` - high-demand rank-one reasoning route
