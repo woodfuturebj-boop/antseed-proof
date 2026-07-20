@@ -54,8 +54,8 @@ c50de6922b00677c93007c01924586de887ced7b@claude-fable-5
 Copy-ready route pages:
 
 - [`opus-4.7`](https://woodfuturebj-boop.github.io/routes/opus-4.7/) - published snapshot `$0.3061375` input / `$1.5306875` output per 1M tokens
-- [`claude-opus-4.7`](https://woodfuturebj-boop.github.io/routes/claude-opus-4.7/) - rank-one canonical alias; published snapshot `$0.1940598` input / `$0.970299` output per 1M tokens
-- [`claude-opus-4-7`](https://woodfuturebj-boop.github.io/routes/claude-opus-4-7/) - rank-one compatibility alias; published snapshot `$0.1940598` input / `$0.970299` output per 1M tokens
+- [`claude-opus-4.7`](https://woodfuturebj-boop.github.io/routes/claude-opus-4.7/) - canonical alias; published snapshot `$0.495` input / `$2.475` output per 1M tokens
+- [`claude-opus-4-7`](https://woodfuturebj-boop.github.io/routes/claude-opus-4-7/) - compatibility alias; published snapshot `$0.495` input / `$2.475` output per 1M tokens
 - [`gpt-5.4`](https://woodfuturebj-boop.github.io/?model=gpt-5.4#first-workload)
 - [`gpt-5.5`](https://woodfuturebj-boop.github.io/?model=gpt-5.5#first-workload)
 - [`gpt-5.6-sol-pro`](https://woodfuturebj-boop.github.io/?model=gpt-5.6-sol-pro#first-workload)
@@ -84,7 +84,7 @@ The beta onboarding page highlights ten services. The order below follows the
 latest published AntSeed user-demand evidence and active adoption pricing:
 
 - `claude-opus-4.6` - highest-user-demand route in the July 19 snapshot
-- `claude-opus-4.7` / `opus-4.7` - lower-priced primary alias plus the official demand-name route for the same high-demand upstream
+- `claude-opus-4.7` / `opus-4.7` - canonical alias plus the official demand-name route for the same high-demand upstream
 - `gpt-5.5` - published high-demand rank-one route
 - `claude-opus-4.8` - high-demand frontier coding route
 - `glm-5.2` - high-demand multilingual route

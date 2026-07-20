@@ -56,9 +56,9 @@ curl http://127.0.0.1:8377/v1/chat/completions \
 
 Start with one of these featured services:
 
-- `claude-opus-4.7` - primary lower-priced canonical alias for the same high-demand Opus 4.7 upstream; published snapshot `$0.1940598` input / `$0.970299` output per 1M tokens
+- `claude-opus-4.7` - canonical alias for the same high-demand Opus 4.7 upstream; published snapshot `$0.495` input / `$2.475` output per 1M tokens
 - `opus-4.7` - official demand-name route; published snapshot `$0.3061375` input / `$1.5306875` output per 1M tokens
-- `claude-opus-4-7` - rank-one compatibility alias; published snapshot `$0.1940598` input / `$0.970299` output per 1M tokens
+- `claude-opus-4-7` - compatibility alias; published snapshot `$0.495` input / `$2.475` output per 1M tokens
 - `claude-opus-4.6` - highest-user-demand route in the July 19 snapshot
 - `gpt-5.5` - published high-demand rank-one route
 - `claude-opus-4.8` - current high-demand frontier coding route
