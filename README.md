@@ -1,4 +1,4 @@
-# Surplus Value Router
+# NovaRoute AI
 
 Public AntSeed verification proof and buyer connection guide for provider:
 
@@ -12,7 +12,7 @@ Install the official [AntStation desktop app](https://github.com/AntSeed/antseed
 for macOS (Apple Silicon or Intel), Windows, or Linux,
 fund the buyer with Base USDC, then open **Discover**. Search for `opus-4.7`,
 `claude-opus-4.7`, or `claude-opus-4-7` first. These three exact service names
-use the same high-demand upstream route. You can also search for `Surplus Value Router`; choose `Surplus Value Router | GPT/GLM/Claude`, select
+use the same high-demand upstream route. You can also search for `NovaRoute AI`; choose `NovaRoute AI`, select
 the service you need, and start a real chat. Selecting the Discover result pins
 both this provider and the service.
 
@@ -73,7 +73,7 @@ Copy-ready route pages:
 
 ## Provider
 
-- Network display name: `Surplus Value Router | GPT/GLM/Claude`
+- Network display name: `NovaRoute AI`
 - Agent ID: `56687`
 - Seller wallet: `0xc50DE6922b00677c93007c01924586dE887ced7b`
 - Settlement network: Base mainnet USDC

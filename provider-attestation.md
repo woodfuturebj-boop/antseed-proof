@@ -1,6 +1,6 @@
 # AntSeed Provider Attestation
 
-Provider: Surplus Value Router
+Provider: NovaRoute AI
 
 This repository is controlled by the GitHub account that publishes the AntSeed GitHub verification proof for the provider below.
 

@@ -1,14 +1,14 @@
 # 24-Hour External Buyer Beta
 
-Use a real AntSeed buyer and a real workload to connect to `Surplus Value Router`.
+Use a real AntSeed buyer and a real workload to connect to `NovaRoute AI`.
 There is no reward for artificial traffic, self-trading, or test volume.
 
 ## Fastest Path: AntStation Discover
 
 1. Install the official [AntStation desktop app](https://github.com/AntSeed/antseed/releases/latest) for macOS (Apple Silicon or Intel), Windows, or Linux.
 2. Fund the buyer with Base USDC.
-3. Open **Discover** and search for `opus-4.7`, `claude-opus-4.7`, or `claude-opus-4-7` first. These exact service names use the same high-demand upstream route. You can also search for `Surplus Value Router`.
-4. Choose `Surplus Value Router | GPT/GLM/Claude`, select a service, and start a real chat.
+3. Open **Discover** and search for `opus-4.7`, `claude-opus-4.7`, or `claude-opus-4-7` first. These exact service names use the same high-demand upstream route. You can also search for `NovaRoute AI`.
+4. Choose `NovaRoute AI`, select a service, and start a real chat.
 
 Selecting the Discover result pins both this provider and the service. Verify
 the displayed provider and live price before funding a session.
@@ -114,7 +114,7 @@ service, and deposit and keep host confirmation enabled.
 Suggested agent instruction:
 
 ```text
-Use AntFeed MCP to look up "Surplus Value Router | GPT/GLM/Claude". Verify
+Use AntFeed MCP to look up "NovaRoute AI". Verify
 seller 0xc50DE6922b00677c93007c01924586dE887ced7b, inspect claude-opus-4-8-fast first,
 then claude-opus-4.7, opus-4.7, gpt-5.5, and glm-5.2 pricing, compare it with
 the signed direct peer catalog, and ask me before create_session.
