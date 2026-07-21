@@ -45,6 +45,7 @@ c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol
 c50de6922b00677c93007c01924586de887ced7b@gemini-3-5-flash
 c50de6922b00677c93007c01924586de887ced7b@glm-5.2
 c50de6922b00677c93007c01924586de887ced7b@kimi-k3
+c50de6922b00677c93007c01924586de887ced7b@claude-opus-4-8-fast
 c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.8
 c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6
 c50de6922b00677c93007c01924586de887ced7b@claude-sonnet-5
@@ -64,6 +65,7 @@ Copy-ready route pages:
 - [`gemini-3-5-flash`](https://woodfuturebj-boop.github.io/routes/gemini-3-5-flash/) - current-demand rank-one route; published snapshot `$0.104013` input / `$0.624073` output per 1M tokens
 - [`glm-5.2`](https://woodfuturebj-boop.github.io/?model=glm-5.2#first-workload)
 - [`kimi-k3`](https://woodfuturebj-boop.github.io/?model=kimi-k3#first-workload)
+- [`claude-opus-4-8-fast`](https://woodfuturebj-boop.github.io/routes/claude-opus-4-8-fast/) - current-demand rank-one route; published snapshot `$1.50` input / `$7.50` output per 1M tokens
 - [`claude-opus-4.8`](https://woodfuturebj-boop.github.io/?model=claude-opus-4.8#first-workload)
 - [`claude-opus-4.6`](https://woodfuturebj-boop.github.io/?model=claude-opus-4.6#first-workload)
 - [`claude-sonnet-5`](https://woodfuturebj-boop.github.io/?model=claude-sonnet-5#first-workload)
@@ -80,12 +82,13 @@ Copy-ready route pages:
 
 ## Featured Services
 
-The beta onboarding page highlights ten services. The order below follows the
+The beta onboarding page highlights eleven services. The order below follows the
 latest published AntSeed user-demand evidence and active adoption pricing:
 
 - `claude-opus-4.6` - highest-user-demand route in the July 19 snapshot
 - `claude-opus-4.7` / `opus-4.7` - canonical alias plus the official demand-name route for the same high-demand upstream
 - `gpt-5.5` - published high-demand rank-one route
+- `claude-opus-4-8-fast` - current paid-demand fast Opus route at an exact rank-one price
 - `claude-opus-4.8` - high-demand frontier coding route
 - `glm-5.2` - high-demand multilingual route
 - `gpt-5.6-sol-pro` - high-demand rank-one reasoning route

@@ -42,6 +42,7 @@ c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol
 c50de6922b00677c93007c01924586de887ced7b@gemini-3-5-flash
 c50de6922b00677c93007c01924586de887ced7b@glm-5.2
 c50de6922b00677c93007c01924586de887ced7b@kimi-k3
+c50de6922b00677c93007c01924586de887ced7b@claude-opus-4-8-fast
 c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.8
 c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6
 c50de6922b00677c93007c01924586de887ced7b@claude-sonnet-5
@@ -61,6 +62,7 @@ Start with one of these featured services:
 - `claude-opus-4-7` - compatibility alias; published snapshot `$0.495` input / `$2.475` output per 1M tokens
 - `claude-opus-4.6` - highest-user-demand route in the July 19 snapshot
 - `gpt-5.5` - published high-demand rank-one route
+- `claude-opus-4-8-fast` - current paid-demand rank-one route; published snapshot `$1.50` input / `$7.50` output per 1M tokens
 - `claude-opus-4.8` - current high-demand frontier coding route
 - `glm-5.2` - current high-demand multilingual route
 - `gpt-5.6-sol-pro` - high-demand rank-one reasoning route
@@ -113,8 +115,8 @@ Suggested agent instruction:
 
 ```text
 Use AntFeed MCP to look up "Surplus Value Router | GPT/GLM/Claude". Verify
-seller 0xc50DE6922b00677c93007c01924586dE887ced7b, inspect claude-opus-4.7 first,
-then opus-4.7, gpt-5.5, and glm-5.2 pricing, compare it with
+seller 0xc50DE6922b00677c93007c01924586dE887ced7b, inspect claude-opus-4-8-fast first,
+then claude-opus-4.7, opus-4.7, gpt-5.5, and glm-5.2 pricing, compare it with
 the signed direct peer catalog, and ask me before create_session.
 ```
 
