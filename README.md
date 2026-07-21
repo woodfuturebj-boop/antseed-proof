@@ -77,7 +77,7 @@ Copy-ready route pages:
 - Agent ID: `56687`
 - Seller wallet: `0xc50DE6922b00677c93007c01924586dE887ced7b`
 - Settlement network: Base mainnet USDC
-- Public endpoint: `192.220.28.51:6882`
+- Public endpoint: `149.28.69.249:6882`
 - Verification domain: `https://woodfuturebj-boop.github.io`
 
 ## Featured Services
