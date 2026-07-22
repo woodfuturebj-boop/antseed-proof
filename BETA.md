@@ -1,7 +1,7 @@
-# 24-Hour External Buyer Beta
+# External Buyer Connection Guide
 
 Use a real AntSeed buyer and a real workload to connect to `NovaRoute AI`.
-There is no reward for artificial traffic, self-trading, or test volume.
+Artificial traffic, self-trading, and test volume are not accepted.
 
 ## Fastest Path: AntStation Discover
 
@@ -22,6 +22,11 @@ antseed payments
 antseed buyer connection set --peer c50de6922b00677c93007c01924586de887ced7b
 curl -s http://127.0.0.1:8377/v1/models | jq '.data[].id'
 ```
+
+When the foreground buyer workload is finished, press `Ctrl+C` and wait for
+`Disconnected. All channels finalized.` before closing the terminal. Do not
+force-kill the buyer process; graceful shutdown lets AntSeed finalize the
+payment channel normally and release unused deposit.
 
 Then choose a direct route and replace the message below with a task you actually
 need completed. The model-prefix route pins this provider for one request without
@@ -57,18 +62,18 @@ curl http://127.0.0.1:8377/v1/chat/completions \
 
 Start with one of these featured services:
 
-- `claude-opus-4.7` - canonical alias for the same high-demand Opus 4.7 upstream; published snapshot `$0.495` input / `$2.475` output per 1M tokens
-- `opus-4.7` - official demand-name route; published snapshot `$0.3061375` input / `$1.5306875` output per 1M tokens
-- `claude-opus-4-7` - compatibility alias; published snapshot `$0.495` input / `$2.475` output per 1M tokens
-- `claude-opus-4.6` - highest-user-demand route in the July 19 snapshot
-- `gpt-5.5` - published high-demand rank-one route
-- `claude-opus-4-8-fast` - current paid-demand rank-one route; published snapshot `$1.50` input / `$7.50` output per 1M tokens
-- `claude-opus-4.8` - current high-demand frontier coding route
-- `glm-5.2` - current high-demand multilingual route
-- `gpt-5.6-sol-pro` - high-demand rank-one reasoning route
-- `gpt-5.6-terra` - current-demand rank-one route; published snapshot `$0.05` input / `$0.30` output per 1M tokens
-- `gpt-5.6-sol` - current-demand rank-one route; published snapshot `$0.10` input / `$0.60` output per 1M tokens
-- `gemini-3-5-flash` - current-demand rank-one route; published snapshot `$0.104013` input / `$0.624073` output per 1M tokens
+- `claude-opus-4.7` - canonical Opus 4.7 alias
+- `opus-4.7` - official demand-name alias for the same upstream route
+- `claude-opus-4-7` - compatibility alias for the same upstream route
+- `claude-opus-4.6` - coding and reasoning route
+- `gpt-5.5` - general and coding route
+- `claude-opus-4-8-fast` - fast Opus route
+- `claude-opus-4.8` - frontier coding route
+- `glm-5.2` - multilingual route
+- `gpt-5.6-sol-pro` - premium reasoning route
+- `gpt-5.6-terra` - general reasoning route
+- `gpt-5.6-sol` - coding and agent route
+- `gemini-3-5-flash` - fast Gemini route
 - `claude-sonnet-5` - coding and agent route
 - `gpt-5.4` - current high-demand general route
 - `kimi-k3` - agent and coding route
@@ -128,4 +133,4 @@ exists. Never submit a peer private key, seed phrase, wallet credential, API key
 or complete environment file.
 
 The operator permanently excludes its own buyer from demand, conversion, and
-repeat-use statistics. Only independent external usage counts toward this beta.
+repeat-use statistics. Only independent external usage counts toward adoption.
