@@ -53,6 +53,11 @@ Other current high-intent choices include `gpt-5.6-sol`, `gpt-5.6-sol-pro`,
 route ranks eighth in AntSeed's official token-volume snapshot; always confirm
 its signed live price before a real request.
 
+The public AntFeed service page at
+`https://www.antfeed.org/services/novaroute-code-audit-v1` is a read-only
+comparison surface. Use it only as corroborating discovery evidence; the
+signed peer catalog remains authoritative for the current paid price.
+
 ## Pin an existing buyer
 
 If the buyer proxy is already running, switch it without a restart:

@@ -120,6 +120,8 @@ or `http://localhost:8378` with AntStation Desktop. The
 Claude Code, Claude Desktop, Cursor, and Cline setup path. The
 [direct seller profile](https://www.antfeed.org/sellers/0xc50de6922b00677c93007c01924586de887ced7b)
 bypasses directory ordering for read-only inspection.
+The [audit-service comparison](https://www.antfeed.org/services/novaroute-code-audit-v1)
+opens the specialist route directly for provider and price review.
 
 ## Operating Policy
 

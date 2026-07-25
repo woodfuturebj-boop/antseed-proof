@@ -142,6 +142,10 @@ Open the [direct AntFeed seller profile](https://www.antfeed.org/sellers/0xc50de
 to inspect the address, aggregate history, and advertised services without
 depending on directory ordering.
 
+For a real code, Web3 transaction-safety, or release-readiness review, use the
+[direct audit-service comparison](https://www.antfeed.org/services/novaroute-code-audit-v1)
+to verify the provider and displayed price before considering a paid session.
+
 Choose the URL for the buyer already running on the same machine as the MCP
 host:
 
