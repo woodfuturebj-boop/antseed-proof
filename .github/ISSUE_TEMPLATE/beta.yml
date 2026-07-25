@@ -27,11 +27,17 @@ body:
     attributes:
       label: Integration
       options:
+        - AntStation
         - OpenAI-compatible client
+        - Codex
+        - OpenCode
+        - Aider
+        - Continue
         - Claude Code
         - Pi
         - LangChain
         - Hermes
+        - AntFeed MCP
         - Other
     validations:
       required: true
@@ -39,8 +45,8 @@ body:
     id: model
     attributes:
       label: Preferred model
-      description: Current high-demand direct routes include claude-opus-4-8-fast, gpt-5.4, glm-5.2, claude-opus-4.8, gemini-3-5-flash, and claude-fable-5.
-      placeholder: claude-opus-4-8-fast
+      description: Start with claude-opus-4.6, first in AntSeed's latest official model-sales snapshot and the lowest-priced indexed exact offer from this peer. Other routes remain available in the signed catalog.
+      placeholder: claude-opus-4.6
     validations:
       required: true
   - type: textarea
@@ -77,5 +83,5 @@ body:
       options:
         - label: I am not the seller operator and will not generate artificial volume or self-trading activity.
           required: true
-        - label: I intend to connect a real workload and can test the setup within 24 hours.
+        - label: I intend to run a real workload within 24 hours and will not send a verification or test prompt.
           required: true
