@@ -49,7 +49,7 @@ with the differentiated `novaroute-code-audit-v1` service. For general-purpose
 work, start with `claude-opus-4.6`: it ranks first in AntSeed's latest official
 model-sales snapshot and NovaRoute has the lowest indexed exact-offer price.
 Other current high-intent choices include `gpt-5.6-sol`, `gpt-5.6-sol-pro`,
-`opus-4.7`, `claude-opus-4.7`, `gpt-5.5`, and `minimax-m2.7`. The MiniMax
+`gpt-5.5`, and `minimax-m2.7`. The MiniMax
 route ranks eighth in AntSeed's official token-volume snapshot; always confirm
 its signed live price before a real request.
 

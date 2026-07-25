@@ -42,9 +42,6 @@ current high-demand direct routes:
 
 ```text
 c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6
-c50de6922b00677c93007c01924586de887ced7b@opus-4.7
-c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.7
-c50de6922b00677c93007c01924586de887ced7b@claude-opus-4-7
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.4
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.5
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol-pro
@@ -62,9 +59,6 @@ c50de6922b00677c93007c01924586de887ced7b@claude-fable-5
 Copy-ready route pages:
 
 - [`claude-opus-4.6`](https://woodfuturebj-boop.github.io/routes/claude-opus-4.6/) - first in AntSeed's latest official model-sales snapshot and lowest-priced indexed exact offer
-- [`opus-4.7`](https://woodfuturebj-boop.github.io/routes/opus-4.7/) - high-value Opus demand; inspect signed live pricing before use
-- [`claude-opus-4.7`](https://woodfuturebj-boop.github.io/routes/claude-opus-4.7/) - canonical alias; inspect signed live pricing before use
-- [`claude-opus-4-7`](https://woodfuturebj-boop.github.io/routes/claude-opus-4-7/) - compatibility alias; inspect signed live pricing before use
 - [`gpt-5.4`](https://woodfuturebj-boop.github.io/?model=gpt-5.4#first-workload)
 - [`gpt-5.5`](https://woodfuturebj-boop.github.io/?model=gpt-5.5#first-workload)
 - [`gpt-5.6-sol`](https://woodfuturebj-boop.github.io/routes/gpt-5.6-sol/) - highest upstream dollar volume in the current sample; inspect signed live pricing before use
@@ -95,7 +89,6 @@ AntSeed's latest official sales snapshot with signed live pricing:
 - `claude-opus-4.6` - first in the latest official model-sales snapshot; lowest-priced indexed exact offer
 - `gpt-5.6-sol` - highest upstream dollar volume in the current market sample; exact rank one
 - `gpt-5.6-sol-pro` - second-highest current reasoning volume; exact rank one
-- `opus-4.7` / `claude-opus-4.7` - current high-value Opus demand; exact rank one
 - `claude-sonnet-5` - high-value coding demand; exact rank one
 - `claude-fable-5` - high-value long-form demand; exact rank one
 - `kimi-k3` - agent and coding demand; exact rank one

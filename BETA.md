@@ -43,9 +43,6 @@ Current high-demand routes:
 
 ```text
 c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6
-c50de6922b00677c93007c01924586de887ced7b@opus-4.7
-c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.7
-c50de6922b00677c93007c01924586de887ced7b@claude-opus-4-7
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.4
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.5
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol-pro
@@ -73,9 +70,6 @@ Start with one of these current high-value services:
   lowest-priced indexed exact offer
 - `gpt-5.6-sol` - highest upstream dollar volume in the current market sample
 - `gpt-5.6-sol-pro` - premium reasoning route
-- `claude-opus-4.7` - canonical Opus 4.7 alias
-- `opus-4.7` - official demand-name alias for the same upstream route
-- `claude-opus-4-7` - compatibility alias for the same upstream route
 - `gpt-5.5` - general and coding route
 - `claude-opus-4-8-fast` - fast Opus route
 - `glm-5.2` - multilingual route
@@ -172,7 +166,7 @@ Use AntFeed MCP to look up "NovaRoute AI". Verify
 seller 0xc50DE6922b00677c93007c01924586dE887ced7b. For a real code, Web3
 transaction-safety, or release-readiness review, inspect
 novaroute-code-audit-v1 first. Otherwise inspect claude-opus-4.6,
-minimax-m2.7, gpt-5.6-sol, opus-4.7, and gpt-5.5 pricing. Compare the result
+minimax-m2.7, gpt-5.6-sol, and gpt-5.5 pricing. Compare the result
 with the signed direct peer catalog, and ask me before create_session.
 ```
 
