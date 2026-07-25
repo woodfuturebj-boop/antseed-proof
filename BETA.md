@@ -140,7 +140,7 @@ models:
 Do not use a test prompt. The first paid request must be the real task the user
 already approved.
 
-## Agent Path: AntFeed MCP
+## Agent Path: AntFeed MCP Read-Only Discovery
 
 This seller is indexed in AntFeed under wallet
 `0xc50DE6922b00677c93007c01924586dE887ced7b`.
@@ -153,16 +153,8 @@ For a real code, Web3 transaction-safety, or release-readiness review, use the
 [direct audit-service comparison](https://www.antfeed.org/services/novaroute-code-audit-v1)
 to verify the provider and displayed price before considering a paid session.
 
-Choose the URL for the buyer already running on the same machine as the MCP
-host:
-
-- CLI buyer: `http://localhost:8377`
-- AntStation Desktop: `http://localhost:8378`
-
-The config below uses the CLI buyer. For AntStation, replace only the buyer URL
-with port `8378`. Add it to Claude Code, Claude Desktop, Cursor, Cline, or
-another MCP host, then start the buyer before restarting that host because
-AntFeed detects the local buyer once at startup.
+Add this read-only discovery config to Claude Code, Claude Desktop, Cursor,
+Cline, or another MCP host:
 
 ```json
 {
@@ -171,19 +163,18 @@ AntFeed detects the local buyer once at startup.
       "command": "npx",
       "args": ["-y", "@antfeed/mcp"],
       "env": {
-        "ANTFEED_EXPLORER_URL": "https://www.antfeed.org",
-        "ANTSEED_BUYER_URL": "http://localhost:8377",
-        "ANTSEED_BUYER_STRICT": "1",
-        "ANTSEED_MAX_DEPOSIT_USDC": "10"
+        "ANTFEED_EXPLORER_URL": "https://www.antfeed.org"
       }
     }
   }
 }
 ```
 
-Use `lookup` and `get_pricing` first. Compare the result with the direct peer
-lookup above. `create_session` can move buyer funds, so review the seller,
-service, and deposit and keep host confirmation enabled.
+Use only `lookup` and `get_pricing`, then compare the result with the direct
+peer lookup above. AntFeed MCP `0.2.5` expects local buyer endpoints at
+`/health` and `/sessions`, but AntSeed CLI `0.1.136` does not expose them.
+Do not call `create_session`; continue through the direct pinned buyer path in
+this guide for the approved real workload.
 
 Suggested agent instruction:
 
@@ -193,7 +184,8 @@ seller 0xc50DE6922b00677c93007c01924586dE887ced7b. For a real code, Web3
 transaction-safety, or release-readiness review, inspect
 novaroute-code-audit-v1 first. Otherwise inspect claude-opus-4.6,
 minimax-m2.7, gpt-5.6-sol, and gpt-5.5 pricing. Compare the result
-with the signed direct peer catalog, and ask me before create_session.
+with the signed direct peer catalog, return the pinned model route, and do not
+call create_session. Ask me to continue through the direct AntSeed buyer path.
 ```
 
 Agents that can load repository skills can instead use the guarded

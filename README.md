@@ -127,10 +127,10 @@ The signed peer catalog is the source of truth. AntFeed refreshes its provider
 directory hourly, and other discovery pages can cache older prices, so verify this command before
 funding or creating a paid session.
 
-For AntFeed MCP, use local buyer URL `http://localhost:8377` with the CLI buyer
-or `http://localhost:8378` with AntStation Desktop. The
-[external buyer guide](BETA.md#agent-path-antfeed-mcp) includes the guarded
-Claude Code, Claude Desktop, Cursor, and Cline setup path. The
+Use AntFeed MCP `0.2.5` only for read-only discovery with AntSeed CLI
+`0.1.136`; the CLI does not expose the MCP bridge's `/health` and `/sessions`
+endpoints. The [external buyer guide](BETA.md#agent-path-antfeed-mcp-read-only-discovery)
+connects discovery to the verified direct buyer path. The
 [direct seller profile](https://www.antfeed.org/sellers/0xc50de6922b00677c93007c01924586de887ced7b)
 bypasses directory ordering for read-only inspection.
 The [audit-service comparison](https://www.antfeed.org/services/novaroute-code-audit-v1)
