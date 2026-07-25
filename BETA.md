@@ -12,7 +12,7 @@ Artificial traffic, self-trading, and test volume are not accepted.
 
 Selecting the Discover result pins both this provider and the service. Verify
 the displayed provider and live price before funding a session.
-Service-name searches such as `gpt-5.6-sol` are useful fallbacks but can return
+Service-name searches such as `claude-opus-4.6` are useful fallbacks but can return
 several peers; the exact provider name narrows the directory directly.
 
 ## CLI Path: Direct Pin
@@ -42,6 +42,7 @@ route.
 Current high-demand routes:
 
 ```text
+c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6
 c50de6922b00677c93007c01924586de887ced7b@opus-4.7
 c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.7
 c50de6922b00677c93007c01924586de887ced7b@claude-opus-4-7
@@ -55,7 +56,6 @@ c50de6922b00677c93007c01924586de887ced7b@glm-5.2
 c50de6922b00677c93007c01924586de887ced7b@kimi-k3
 c50de6922b00677c93007c01924586de887ced7b@claude-opus-4-8-fast
 c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.8
-c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6
 c50de6922b00677c93007c01924586de887ced7b@claude-sonnet-5
 c50de6922b00677c93007c01924586de887ced7b@claude-fable-5
 c50de6922b00677c93007c01924586de887ced7b@novaroute-code-audit-v1
@@ -64,23 +64,23 @@ c50de6922b00677c93007c01924586de887ced7b@novaroute-code-audit-v1
 ```bash
 curl http://127.0.0.1:8377/v1/chat/completions \
   -H "content-type: application/json" \
-  -d '{"model":"c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol","messages":[{"role":"user","content":"REPLACE WITH YOUR REAL TASK"}]}'
+  -d '{"model":"c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6","messages":[{"role":"user","content":"REPLACE WITH YOUR REAL TASK"}]}'
 ```
 
 Start with one of these current high-value services:
 
-- `gpt-5.6-sol` - highest upstream dollar volume in the current sample
+- `claude-opus-4.6` - first in AntSeed's latest official model-sales snapshot;
+  lowest-priced indexed exact offer
+- `gpt-5.6-sol` - highest upstream dollar volume in the current market sample
 - `gpt-5.6-sol-pro` - premium reasoning route
 - `claude-opus-4.7` - canonical Opus 4.7 alias
 - `opus-4.7` - official demand-name alias for the same upstream route
 - `claude-opus-4-7` - compatibility alias for the same upstream route
-- `claude-opus-4.6` - coding and reasoning route
 - `gpt-5.5` - general and coding route
 - `claude-opus-4-8-fast` - fast Opus route
 - `claude-opus-4.8` - frontier coding route
 - `glm-5.2` - multilingual route
 - `gpt-5.6-terra` - general reasoning route
-- `gpt-5.6-sol` - coding and agent route
 - `gemini-3-5-flash` - fast Gemini route
 - `claude-sonnet-5` - coding and agent route
 - `gpt-5.4` - current high-demand general route
@@ -89,7 +89,8 @@ Start with one of these current high-value services:
 - `novaroute-code-audit-v1` - differentiated read-only code, Web3
   transaction-safety, and release-readiness review agent
 
-[Demand evidence: current upstream market feed](https://www.surplusintelligence.ai/api/inference/markets).
+[Official demand evidence: AntSeed Top models by sales](https://x.com/AntSeedAI/status/2081002378795377145).
+[Current exact-offer evidence](https://network.antseed.com/stats).
 
 Inspect the signed live catalog and pricing before use:
 
@@ -100,6 +101,42 @@ antseed network peer c50de6922b00677c93007c01924586de887ced7b
 Use this signed peer catalog as the source of truth. AntFeed refreshes its
 provider directory hourly, and other discovery surfaces may also cache an older price snapshot. If a cached listing
 differs, do not create a paid session until the direct peer lookup is reviewed.
+
+## Coding Tool Paths
+
+After the buyer is funded, running, pinned, and the user has approved a real
+task:
+
+```bash
+antseed codex --model claude-opus-4.6
+antseed opencode --model claude-opus-4.6
+
+export OPENAI_API_BASE=http://127.0.0.1:8377/v1
+export OPENAI_API_KEY=antseed-local
+aider --model openai/c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6
+```
+
+Continue can use this `config.yaml` model entry:
+
+```yaml
+name: NovaRoute AI
+version: 1.0.0
+schema: v1
+
+models:
+  - name: NovaRoute AI - claude-opus-4.6
+    provider: openai
+    model: c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6
+    apiBase: http://127.0.0.1:8377/v1
+    apiKey: antseed-local
+    roles:
+      - chat
+      - edit
+      - apply
+```
+
+Do not use a test prompt. The first paid request must be the real task the user
+already approved.
 
 ## Agent Path: AntFeed MCP
 
@@ -133,8 +170,8 @@ Suggested agent instruction:
 Use AntFeed MCP to look up "NovaRoute AI". Verify
 seller 0xc50DE6922b00677c93007c01924586dE887ced7b. For a real code, Web3
 transaction-safety, or release-readiness review, inspect
-novaroute-code-audit-v1 first. Otherwise inspect gpt-5.6-sol,
-claude-opus-4.7, opus-4.7, gpt-5.5, and glm-5.2 pricing. Compare the result
+novaroute-code-audit-v1 first. Otherwise inspect claude-opus-4.6,
+gpt-5.6-sol, opus-4.7, and gpt-5.5 pricing. Compare the result
 with the signed direct peer catalog, and ask me before create_session.
 ```
 
