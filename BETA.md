@@ -7,7 +7,7 @@ Artificial traffic, self-trading, and test volume are not accepted.
 
 1. Install the official [AntStation desktop app](https://github.com/AntSeed/antseed/releases/latest) for macOS (Apple Silicon or Intel), Windows, or Linux.
 2. Fund the buyer with Base USDC.
-3. Open **Discover** and search for `gpt-5.6-sol-pro` or `NovaRoute AI`.
+3. Open **Discover** and search for `gpt-5.6-sol`, `gpt-5.6-sol-pro`, or `NovaRoute AI`.
 4. Choose `NovaRoute AI`, select a service, and start a real chat.
 
 Selecting the Discover result pins both this provider and the service. Verify
@@ -39,7 +39,7 @@ c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.7
 c50de6922b00677c93007c01924586de887ced7b@claude-opus-4-7
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.4
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.5
-c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol-pro
+c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-terra
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol
 c50de6922b00677c93007c01924586de887ced7b@gemini-3-5-flash
@@ -55,11 +55,12 @@ c50de6922b00677c93007c01924586de887ced7b@claude-fable-5
 ```bash
 curl http://127.0.0.1:8377/v1/chat/completions \
   -H "content-type: application/json" \
-  -d '{"model":"c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol-pro","messages":[{"role":"user","content":"REPLACE WITH YOUR REAL TASK"}]}'
+  -d '{"model":"c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol","messages":[{"role":"user","content":"REPLACE WITH YOUR REAL TASK"}]}'
 ```
 
 Start with one of these current high-value services:
 
+- `gpt-5.6-sol` - highest upstream dollar volume in the current sample
 - `gpt-5.6-sol-pro` - premium reasoning route
 - `claude-opus-4.7` - canonical Opus 4.7 alias
 - `opus-4.7` - official demand-name alias for the same upstream route
@@ -118,7 +119,7 @@ Suggested agent instruction:
 
 ```text
 Use AntFeed MCP to look up "NovaRoute AI". Verify
-seller 0xc50DE6922b00677c93007c01924586dE887ced7b, inspect gpt-5.6-sol-pro first,
+seller 0xc50DE6922b00677c93007c01924586dE887ced7b, inspect gpt-5.6-sol first,
 then claude-opus-4.7, opus-4.7, gpt-5.5, and glm-5.2 pricing, compare it with
 the signed direct peer catalog, and ask me before create_session.
 ```

@@ -11,7 +11,7 @@ Public AntSeed verification proof and buyer connection guide for provider:
 Install the official [AntStation desktop app](https://github.com/AntSeed/antseed/releases/latest)
 for macOS (Apple Silicon or Intel), Windows, or Linux,
 fund the buyer with Base USDC, then open **Discover**. Search for
-`gpt-5.6-sol-pro` or `NovaRoute AI`; choose `NovaRoute AI`, select
+`gpt-5.6-sol`, `gpt-5.6-sol-pro`, or `NovaRoute AI`; choose `NovaRoute AI`, select
 the service you need, and start a real chat. Selecting the Discover result pins
 both this provider and the service.
 
@@ -38,7 +38,7 @@ c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.7
 c50de6922b00677c93007c01924586de887ced7b@claude-opus-4-7
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.4
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.5
-c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol-pro
+c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-terra
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol
 c50de6922b00677c93007c01924586de887ced7b@gemini-3-5-flash
@@ -58,6 +58,7 @@ Copy-ready route pages:
 - [`claude-opus-4-7`](https://woodfuturebj-boop.github.io/routes/claude-opus-4-7/) - compatibility alias; inspect signed live pricing before use
 - [`gpt-5.4`](https://woodfuturebj-boop.github.io/?model=gpt-5.4#first-workload)
 - [`gpt-5.5`](https://woodfuturebj-boop.github.io/?model=gpt-5.5#first-workload)
+- [`gpt-5.6-sol`](https://woodfuturebj-boop.github.io/routes/gpt-5.6-sol/) - highest upstream dollar volume in the current sample; inspect signed live pricing before use
 - [`gpt-5.6-sol-pro`](https://woodfuturebj-boop.github.io/?model=gpt-5.6-sol-pro#first-workload)
 - [`gpt-5.6-terra`](https://woodfuturebj-boop.github.io/routes/gpt-5.6-terra/) - current-demand rank-one route; inspect signed live pricing before use
 - [`gpt-5.6-sol`](https://woodfuturebj-boop.github.io/routes/gpt-5.6-sol/) - current-demand rank-one route; inspect signed live pricing before use
@@ -84,7 +85,8 @@ Copy-ready route pages:
 The buyer page prioritizes current high-value services. The order below follows
 the latest upstream request and volume sample plus signed AntSeed pricing:
 
-- `gpt-5.6-sol-pro` - current high-value reasoning demand; exact rank one
+- `gpt-5.6-sol` - highest upstream dollar volume in the current sample; exact rank one
+- `gpt-5.6-sol-pro` - second-highest current reasoning volume; exact rank one
 - `opus-4.7` / `claude-opus-4.7` - current high-value Opus demand; exact rank one
 - `claude-sonnet-5` - high-value coding demand; exact rank one
 - `claude-opus-4.8` - high-value frontier coding demand; exact rank one
