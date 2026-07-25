@@ -58,6 +58,7 @@ c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.8
 c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6
 c50de6922b00677c93007c01924586de887ced7b@claude-sonnet-5
 c50de6922b00677c93007c01924586de887ced7b@claude-fable-5
+c50de6922b00677c93007c01924586de887ced7b@novaroute-code-audit-v1
 ```
 
 ```bash
@@ -85,6 +86,8 @@ Start with one of these current high-value services:
 - `gpt-5.4` - current high-demand general route
 - `kimi-k3` - agent and coding route
 - `claude-fable-5` - current long-form and coding route
+- `novaroute-code-audit-v1` - differentiated read-only code, Web3
+  transaction-safety, and release-readiness review agent
 
 [Demand evidence: current upstream market feed](https://www.surplusintelligence.ai/api/inference/markets).
 
@@ -112,6 +115,7 @@ This seller is indexed in AntFeed under wallet
       "env": {
         "ANTFEED_EXPLORER_URL": "https://www.antfeed.org",
         "ANTSEED_BUYER_URL": "http://localhost:8377",
+        "ANTSEED_BUYER_STRICT": "1",
         "ANTSEED_MAX_DEPOSIT_USDC": "10"
       }
     }
@@ -127,9 +131,11 @@ Suggested agent instruction:
 
 ```text
 Use AntFeed MCP to look up "NovaRoute AI". Verify
-seller 0xc50DE6922b00677c93007c01924586dE887ced7b, inspect gpt-5.6-sol first,
-then claude-opus-4.7, opus-4.7, gpt-5.5, and glm-5.2 pricing, compare it with
-the signed direct peer catalog, and ask me before create_session.
+seller 0xc50DE6922b00677c93007c01924586dE887ced7b. For a real code, Web3
+transaction-safety, or release-readiness review, inspect
+novaroute-code-audit-v1 first. Otherwise inspect gpt-5.6-sol,
+claude-opus-4.7, opus-4.7, gpt-5.5, and glm-5.2 pricing. Compare the result
+with the signed direct peer catalog, and ask me before create_session.
 ```
 
 Agents that can load repository skills can instead use the guarded

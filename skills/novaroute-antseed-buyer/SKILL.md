@@ -44,9 +44,10 @@ antseed buyer status
 Confirm that the peer is reachable, the required service is listed, and its
 current signed input and output prices are acceptable to the user.
 
-Recommended starting service: `gpt-5.6-sol`. Other current high-intent choices
-include `gpt-5.6-sol-pro`, `opus-4.7`, `claude-opus-4.7`, `glm-5.2`, and
-`novaroute-code-audit-v1`.
+For a real code, Web3 transaction-safety, or release-readiness review, start
+with the differentiated `novaroute-code-audit-v1` service. For general-purpose
+work, start with `gpt-5.6-sol`. Other current high-intent choices include
+`gpt-5.6-sol-pro`, `opus-4.7`, `claude-opus-4.7`, and `glm-5.2`.
 
 ## Pin an existing buyer
 
