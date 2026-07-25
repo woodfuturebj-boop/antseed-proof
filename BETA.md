@@ -34,6 +34,15 @@ When the foreground buyer workload is finished, press `Ctrl+C` and wait for
 force-kill the buyer process; graceful shutdown lets AntSeed finalize the
 payment channel normally and release unused deposit.
 
+Before opening a paid session, run this read-only preflight. It checks the
+installed CLI, signed peer catalog, and buyer balance without calling a model:
+
+```bash
+antseed --version
+antseed network peer c50de6922b00677c93007c01924586de887ced7b
+antseed buyer balance
+```
+
 Then choose a direct route and replace the message below with a task you actually
 need completed. The model-prefix route pins this provider for one request without
 replacing a saved connection. Do not send artificial traffic just to test the
@@ -90,12 +99,6 @@ signed live price, then pin the peer before the paid session.
 [Official demand evidence: AntSeed Top models by sales](https://x.com/AntSeedAI/status/2081002378795377145).
 [Official demand evidence: AntSeed Top models by token volume](https://x.com/AntSeedAI/status/2077010692012470320).
 [Current exact-offer evidence](https://network.antseed.com/stats).
-
-Inspect the signed live catalog and pricing before use:
-
-```bash
-antseed network peer c50de6922b00677c93007c01924586de887ced7b
-```
 
 Use this signed peer catalog as the source of truth. AntFeed refreshes its
 provider directory hourly, and other discovery surfaces may also cache an older price snapshot. If a cached listing

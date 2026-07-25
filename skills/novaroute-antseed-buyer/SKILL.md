@@ -39,10 +39,12 @@ Run these first:
 antseed --version
 antseed network peer c50de6922b00677c93007c01924586de887ced7b
 antseed buyer status
+antseed buyer balance
 ```
 
-Confirm that the peer is reachable, the required service is listed, and its
-current signed input and output prices are acceptable to the user.
+These checks do not call a model or open a paid inference session. Confirm that
+the peer is reachable, the required service is listed, and its current signed
+input and output prices are acceptable to the user.
 
 For a real code, Web3 transaction-safety, or release-readiness review, start
 with the differentiated `novaroute-code-audit-v1` service. For general-purpose

@@ -31,6 +31,15 @@ restart:
 antseed buyer connection set --peer c50de6922b00677c93007c01924586de887ced7b
 ```
 
+Run the read-only preflight before opening a paid session. It does not call a
+model:
+
+```bash
+antseed --version
+antseed network peer c50de6922b00677c93007c01924586de887ced7b
+antseed buyer balance
+```
+
 Per-request routing also works:
 
 ```text
