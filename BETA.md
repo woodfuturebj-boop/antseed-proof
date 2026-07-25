@@ -83,6 +83,10 @@ Start with one of these current high-value services:
 - `novaroute-code-audit-v1` - differentiated read-only code, Web3
   transaction-safety, and release-readiness review agent
 
+For any service above, open its exact AntFeed comparison at
+`https://www.antfeed.org/services/<service-id>`, confirm NovaRoute AI and the
+signed live price, then pin the peer before the paid session.
+
 [Official demand evidence: AntSeed Top models by sales](https://x.com/AntSeedAI/status/2081002378795377145).
 [Official demand evidence: AntSeed Top models by token volume](https://x.com/AntSeedAI/status/2077010692012470320).
 [Current exact-offer evidence](https://network.antseed.com/stats).

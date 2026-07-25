@@ -51,7 +51,8 @@ model-sales snapshot and exposes signed live directory pricing.
 Other current high-intent choices include `gpt-5.6-sol`, `gpt-5.6-sol-pro`,
 `gpt-5.5`, and `minimax-m2.7`. The MiniMax
 route ranks eighth in AntSeed's official token-volume snapshot; always confirm
-its signed live price before a real request.
+an exact service comparison at `https://www.antfeed.org/services/<service-id>`,
+then confirm its signed live price before a real request.
 
 The public AntFeed service page at
 `https://www.antfeed.org/services/novaroute-code-audit-v1` is a read-only

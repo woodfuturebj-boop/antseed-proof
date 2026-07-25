@@ -86,6 +86,10 @@ Copy-ready route pages:
 The buyer page prioritizes current high-value services. The order below combines
 AntSeed's latest official sales snapshot with signed live pricing:
 
+Each service can be compared directly at
+`https://www.antfeed.org/services/<service-id>`. Confirm NovaRoute AI and the
+signed live price before opening a paid session.
+
 - `claude-opus-4.6` - first in the latest official model-sales snapshot; signed live directory pricing
 - `gpt-5.6-sol` - highest upstream dollar volume in the current market sample; exact rank one
 - `gpt-5.6-sol-pro` - second-highest current reasoning volume; exact rank one
