@@ -47,7 +47,7 @@ current signed input and output prices are acceptable to the user.
 For a real code, Web3 transaction-safety, or release-readiness review, start
 with the differentiated `novaroute-code-audit-v1` service. For general-purpose
 work, start with `claude-opus-4.6`: it ranks first in AntSeed's latest official
-model-sales snapshot and NovaRoute has the lowest indexed exact-offer price.
+model-sales snapshot and exposes signed live directory pricing.
 Other current high-intent choices include `gpt-5.6-sol`, `gpt-5.6-sol-pro`,
 `gpt-5.5`, and `minimax-m2.7`. The MiniMax
 route ranks eighth in AntSeed's official token-volume snapshot; always confirm

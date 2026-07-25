@@ -58,7 +58,7 @@ c50de6922b00677c93007c01924586de887ced7b@claude-fable-5
 
 Copy-ready route pages:
 
-- [`claude-opus-4.6`](https://woodfuturebj-boop.github.io/routes/claude-opus-4.6/) - first in AntSeed's latest official model-sales snapshot and lowest-priced indexed exact offer
+- [`claude-opus-4.6`](https://woodfuturebj-boop.github.io/routes/claude-opus-4.6/) - first in AntSeed's latest official model-sales snapshot; inspect signed live pricing before use
 - [`gpt-5.4`](https://woodfuturebj-boop.github.io/?model=gpt-5.4#first-workload)
 - [`gpt-5.5`](https://woodfuturebj-boop.github.io/?model=gpt-5.5#first-workload)
 - [`gpt-5.6-sol`](https://woodfuturebj-boop.github.io/routes/gpt-5.6-sol/) - highest upstream dollar volume in the current sample; inspect signed live pricing before use
@@ -86,7 +86,7 @@ Copy-ready route pages:
 The buyer page prioritizes current high-value services. The order below combines
 AntSeed's latest official sales snapshot with signed live pricing:
 
-- `claude-opus-4.6` - first in the latest official model-sales snapshot; lowest-priced indexed exact offer
+- `claude-opus-4.6` - first in the latest official model-sales snapshot; signed live directory pricing
 - `gpt-5.6-sol` - highest upstream dollar volume in the current market sample; exact rank one
 - `gpt-5.6-sol-pro` - second-highest current reasoning volume; exact rank one
 - `claude-sonnet-5` - high-value coding demand; exact rank one

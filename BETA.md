@@ -67,7 +67,7 @@ curl http://127.0.0.1:8377/v1/chat/completions \
 Start with one of these current high-value services:
 
 - `claude-opus-4.6` - first in AntSeed's latest official model-sales snapshot;
-  lowest-priced indexed exact offer
+  signed live directory pricing
 - `gpt-5.6-sol` - highest upstream dollar volume in the current market sample
 - `gpt-5.6-sol-pro` - premium reasoning route
 - `gpt-5.5` - general and coding route
