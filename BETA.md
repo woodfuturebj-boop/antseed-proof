@@ -20,6 +20,19 @@ several peers; the exact provider name narrows the directory directly.
 ```bash
 npm install -g @antseed/cli
 antseed payments
+```
+
+The payment portal stays in the foreground. After funding, stop it with
+`Ctrl+C` and confirm the deposit from that terminal, or keep it open and use a
+second terminal:
+
+```bash
+antseed buyer balance
+```
+
+Then start the buyer with this provider pinned:
+
+```bash
 antseed buyer start --peer c50de6922b00677c93007c01924586de887ced7b
 ```
 
