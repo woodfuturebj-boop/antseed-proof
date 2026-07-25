@@ -117,6 +117,12 @@ For Continue, add an OpenAI provider in `config.yaml` with
 `apiBase: http://127.0.0.1:8377/v1`, `apiKey: antseed-local`, and model
 `c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6`.
 
+For Cline, select **OpenAI Compatible** and enter base URL
+`http://127.0.0.1:8377/v1`, API key `antseed-local`, and model ID
+`c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6`. Cline may refresh
+the free local model catalog while these fields are entered. Do not send a
+synthetic verification prompt after configuration.
+
 These commands configure a route. Run them only for a concrete workload the
 user has approved; do not send a verification or test prompt.
 

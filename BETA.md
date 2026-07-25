@@ -150,6 +150,18 @@ models:
       - apply
 ```
 
+Cline can select **OpenAI Compatible** and use:
+
+```text
+Base URL: http://127.0.0.1:8377/v1
+API Key: antseed-local
+Model ID: c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6
+```
+
+Entering the Base URL and API key may refresh Cline's free local model catalog.
+It must not be followed by a synthetic verification prompt. See Cline's
+[official OpenAI Compatible guide](https://docs.cline.bot/provider-config/openai-compatible).
+
 Do not use a test prompt. The first paid request must be the real task the user
 already approved.
 

@@ -81,6 +81,13 @@ Copy-ready route pages:
 - [`claude-sonnet-5`](https://woodfuturebj-boop.github.io/routes/claude-sonnet-5/)
 - [`claude-fable-5`](https://woodfuturebj-boop.github.io/routes/claude-fable-5/)
 
+Cline users can choose **OpenAI Compatible**, point the Base URL to
+`http://127.0.0.1:8377/v1`, use the non-secret placeholder key
+`antseed-local`, and set the Model ID to the explicit
+`c50de6922b00677c93007c01924586de887ced7b@<service-id>` route. The first paid
+request must be a real task, not a connection test. See the
+[official Cline guide](https://docs.cline.bot/provider-config/openai-compatible).
+
 ## Provider
 
 - Network display name: `NovaRoute AI`
