@@ -10,10 +10,11 @@ Public AntSeed verification proof and buyer connection guide for provider:
 
 Install the official [AntStation desktop app](https://github.com/AntSeed/antseed/releases/latest)
 for macOS (Apple Silicon or Intel), Windows, or Linux,
-fund the buyer with Base USDC, then open **Discover**. Search for
-`gpt-5.6-sol`, `gpt-5.6-sol-pro`, or `NovaRoute AI`; choose `NovaRoute AI`, select
-the service you need, and start a real chat. Selecting the Discover result pins
-both this provider and the service.
+fund the buyer with Base USDC, then open **Discover**. Search the exact provider
+name `NovaRoute AI` first, choose it, select the service you need, and start a
+real chat. Selecting the Discover result pins both this provider and the
+service. Service-name searches such as `gpt-5.6-sol` are broader and can return
+several peers.
 
 ### CLI pinned startup
 

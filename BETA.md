@@ -7,11 +7,13 @@ Artificial traffic, self-trading, and test volume are not accepted.
 
 1. Install the official [AntStation desktop app](https://github.com/AntSeed/antseed/releases/latest) for macOS (Apple Silicon or Intel), Windows, or Linux.
 2. Fund the buyer with Base USDC.
-3. Open **Discover** and search for `gpt-5.6-sol`, `gpt-5.6-sol-pro`, or `NovaRoute AI`.
+3. Open **Discover** and search the exact provider name `NovaRoute AI` first.
 4. Choose `NovaRoute AI`, select a service, and start a real chat.
 
 Selecting the Discover result pins both this provider and the service. Verify
 the displayed provider and live price before funding a session.
+Service-name searches such as `gpt-5.6-sol` are useful fallbacks but can return
+several peers; the exact provider name narrows the directory directly.
 
 ## CLI Path: Direct Pin
 
