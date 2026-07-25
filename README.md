@@ -117,7 +117,9 @@ funding or creating a paid session.
 For AntFeed MCP, use local buyer URL `http://localhost:8377` with the CLI buyer
 or `http://localhost:8378` with AntStation Desktop. The
 [external buyer guide](BETA.md#agent-path-antfeed-mcp) includes the guarded
-Claude Code, Claude Desktop, Cursor, and Cline setup path.
+Claude Code, Claude Desktop, Cursor, and Cline setup path. The
+[direct seller profile](https://www.antfeed.org/sellers/0xc50de6922b00677c93007c01924586de887ced7b)
+bypasses directory ordering for read-only inspection.
 
 ## Operating Policy
 

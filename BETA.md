@@ -138,6 +138,10 @@ already approved.
 This seller is indexed in AntFeed under wallet
 `0xc50DE6922b00677c93007c01924586dE887ced7b`.
 
+Open the [direct AntFeed seller profile](https://www.antfeed.org/sellers/0xc50de6922b00677c93007c01924586de887ced7b)
+to inspect the address, aggregate history, and advertised services without
+depending on directory ordering.
+
 Choose the URL for the buyer already running on the same machine as the MCP
 host:
 
