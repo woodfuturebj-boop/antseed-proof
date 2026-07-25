@@ -37,7 +37,8 @@ body:
         - Pi
         - LangChain
         - Hermes
-        - AntFeed MCP
+        - AntFeed MCP with CLI buyer (:8377)
+        - AntFeed MCP with AntStation Desktop (:8378)
         - Other
     validations:
       required: true

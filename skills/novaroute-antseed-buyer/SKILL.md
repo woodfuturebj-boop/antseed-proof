@@ -116,6 +116,16 @@ For Pi, install `git:github.com/AntSeed/pi-antseed`, reload, then search the
 model selector for peer prefix `c50de6922b006` and choose the matching route.
 Pi sends the peer pin header on every request.
 
+## AntFeed MCP path
+
+Use `http://localhost:8377` as `ANTSEED_BUYER_URL` when the CLI buyer is
+running, or `http://localhost:8378` when AntStation Desktop is running. Start
+the selected buyer before restarting Claude Code, Claude Desktop, Cursor,
+Cline, or another MCP host because AntFeed detects the buyer once at startup.
+Run the read-only `lookup` and `get_pricing` tools first. Keep host confirmation
+enabled and do not call `create_session` until the user has approved the exact
+peer, service, current price, Base USDC deposit, and real workload.
+
 ## Acceptance checks
 
 - The selected peer ID exactly matches the fixed identity above.

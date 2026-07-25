@@ -138,6 +138,17 @@ already approved.
 This seller is indexed in AntFeed under wallet
 `0xc50DE6922b00677c93007c01924586dE887ced7b`.
 
+Choose the URL for the buyer already running on the same machine as the MCP
+host:
+
+- CLI buyer: `http://localhost:8377`
+- AntStation Desktop: `http://localhost:8378`
+
+The config below uses the CLI buyer. For AntStation, replace only the buyer URL
+with port `8378`. Add it to Claude Code, Claude Desktop, Cursor, Cline, or
+another MCP host, then start the buyer before restarting that host because
+AntFeed detects the local buyer once at startup.
+
 ```json
 {
   "mcpServers": {

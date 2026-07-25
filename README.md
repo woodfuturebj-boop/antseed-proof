@@ -114,6 +114,11 @@ The signed peer catalog is the source of truth. AntFeed refreshes its provider
 directory hourly, and other discovery pages can cache older prices, so verify this command before
 funding or creating a paid session.
 
+For AntFeed MCP, use local buyer URL `http://localhost:8377` with the CLI buyer
+or `http://localhost:8378` with AntStation Desktop. The
+[external buyer guide](BETA.md#agent-path-antfeed-mcp) includes the guarded
+Claude Code, Claude Desktop, Cursor, and Cline setup path.
+
 ## Operating Policy
 
 - Surplus-backed OpenAI-compatible provider.
