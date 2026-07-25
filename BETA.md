@@ -21,6 +21,12 @@ antseed payments
 antseed buyer start --peer c50de6922b00677c93007c01924586de887ced7b
 ```
 
+If the buyer proxy is already running, pin this peer without restarting it:
+
+```bash
+antseed buyer connection set --peer c50de6922b00677c93007c01924586de887ced7b
+```
+
 When the foreground buyer workload is finished, press `Ctrl+C` and wait for
 `Disconnected. All channels finalized.` before closing the terminal. Do not
 force-kill the buyer process; graceful shutdown lets AntSeed finalize the
@@ -39,7 +45,7 @@ c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.7
 c50de6922b00677c93007c01924586de887ced7b@claude-opus-4-7
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.4
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.5
-c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol
+c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol-pro
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-terra
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol
 c50de6922b00677c93007c01924586de887ced7b@gemini-3-5-flash
@@ -123,6 +129,11 @@ seller 0xc50DE6922b00677c93007c01924586dE887ced7b, inspect gpt-5.6-sol first,
 then claude-opus-4.7, opus-4.7, gpt-5.5, and glm-5.2 pricing, compare it with
 the signed direct peer catalog, and ask me before create_session.
 ```
+
+Agents that can load repository skills can instead use the guarded
+[`novaroute-antseed-buyer` skill](skills/novaroute-antseed-buyer/SKILL.md). It
+performs read-only peer and price checks first and requires explicit user
+confirmation before funding or a paid real workload.
 
 ## Help and Attribution
 

@@ -23,10 +23,17 @@ CLI buyer auto-selection is disabled, so buyers must pin a peer explicitly.
 antseed buyer start --peer c50de6922b00677c93007c01924586de887ced7b
 ```
 
-Per-request routing also works:
+For a buyer proxy that is already running, switch the session pin without a
+restart:
 
 ```bash
-curl -H "x-antseed-pin-peer: c50de6922b00677c93007c01924586de887ced7b" http://127.0.0.1:8377/v1/models
+antseed buyer connection set --peer c50de6922b00677c93007c01924586de887ced7b
+```
+
+Per-request routing also works:
+
+```text
+x-antseed-pin-peer: c50de6922b00677c93007c01924586de887ced7b
 ```
 
 For a single real workload without replacing a saved connection, use one of the
@@ -38,7 +45,7 @@ c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.7
 c50de6922b00677c93007c01924586de887ced7b@claude-opus-4-7
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.4
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.5
-c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol
+c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol-pro
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-terra
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol
 c50de6922b00677c93007c01924586de887ced7b@gemini-3-5-flash
@@ -122,6 +129,7 @@ funding or creating a paid session.
 ## Beta and Support
 
 - [24-hour external buyer guide](BETA.md)
+- [Guarded buyer skill for agents](skills/novaroute-antseed-buyer/SKILL.md)
 - [Beta overview and acceptance criteria](https://github.com/woodfuturebj-boop/antseed-proof/issues/1)
 - [External buyer beta](https://github.com/woodfuturebj-boop/antseed-proof/issues/new?template=beta.yml)
 - [Connection support](https://github.com/woodfuturebj-boop/antseed-proof/issues/new?template=support.yml)
