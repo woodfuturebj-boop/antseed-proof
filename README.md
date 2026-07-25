@@ -59,18 +59,18 @@ c50de6922b00677c93007c01924586de887ced7b@claude-fable-5
 Copy-ready route pages:
 
 - [`claude-opus-4.6`](https://woodfuturebj-boop.github.io/routes/claude-opus-4.6/) - first in AntSeed's latest official model-sales snapshot; inspect signed live pricing before use
-- [`gpt-5.4`](https://woodfuturebj-boop.github.io/?model=gpt-5.4#first-workload)
+- [`gpt-5.4`](https://woodfuturebj-boop.github.io/routes/gpt-5.4/)
 - [`gpt-5.5`](https://woodfuturebj-boop.github.io/?model=gpt-5.5#first-workload)
 - [`gpt-5.6-sol`](https://woodfuturebj-boop.github.io/routes/gpt-5.6-sol/) - highest upstream dollar volume in the current sample; inspect signed live pricing before use
 - [`gpt-5.6-sol-pro`](https://woodfuturebj-boop.github.io/?model=gpt-5.6-sol-pro#first-workload)
 - [`gpt-5.6-terra`](https://woodfuturebj-boop.github.io/routes/gpt-5.6-terra/) - current-demand rank-one route; inspect signed live pricing before use
 - [`gemini-3-5-flash`](https://woodfuturebj-boop.github.io/routes/gemini-3-5-flash/) - current-demand rank-one route; inspect signed live pricing before use
-- [`glm-5.2`](https://woodfuturebj-boop.github.io/?model=glm-5.2#first-workload)
+- [`glm-5.2`](https://woodfuturebj-boop.github.io/routes/glm-5.2/)
 - [`minimax-m2.7`](https://woodfuturebj-boop.github.io/routes/minimax-m2.7/) - eighth in AntSeed's official token-volume snapshot; inspect signed live pricing before use
 - [`kimi-k3`](https://woodfuturebj-boop.github.io/?model=kimi-k3#first-workload)
 - [`claude-opus-4-8-fast`](https://woodfuturebj-boop.github.io/routes/claude-opus-4-8-fast/) - fast route; inspect signed live pricing before use
-- [`claude-sonnet-5`](https://woodfuturebj-boop.github.io/?model=claude-sonnet-5#first-workload)
-- [`claude-fable-5`](https://woodfuturebj-boop.github.io/?model=claude-fable-5#first-workload)
+- [`claude-sonnet-5`](https://woodfuturebj-boop.github.io/routes/claude-sonnet-5/)
+- [`claude-fable-5`](https://woodfuturebj-boop.github.io/routes/claude-fable-5/)
 
 ## Provider
 
