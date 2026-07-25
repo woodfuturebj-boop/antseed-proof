@@ -7,7 +7,7 @@ Artificial traffic, self-trading, and test volume are not accepted.
 
 1. Install the official [AntStation desktop app](https://github.com/AntSeed/antseed/releases/latest) for macOS (Apple Silicon or Intel), Windows, or Linux.
 2. Fund the buyer with Base USDC.
-3. Open **Discover** and search for `opus-4.7`, `claude-opus-4.7`, or `claude-opus-4-7` first. These exact service names use the same high-demand upstream route. You can also search for `NovaRoute AI`.
+3. Open **Discover** and search for `gpt-5.6-sol-pro` or `NovaRoute AI`.
 4. Choose `NovaRoute AI`, select a service, and start a real chat.
 
 Selecting the Discover result pins both this provider and the service. Verify
@@ -17,10 +17,8 @@ the displayed provider and live price before funding a session.
 
 ```bash
 npm install -g @antseed/cli
-antseed buyer start
 antseed payments
-antseed buyer connection set --peer c50de6922b00677c93007c01924586de887ced7b
-curl -s http://127.0.0.1:8377/v1/models | jq '.data[].id'
+antseed buyer start --peer c50de6922b00677c93007c01924586de887ced7b
 ```
 
 When the foreground buyer workload is finished, press `Ctrl+C` and wait for
@@ -57,11 +55,12 @@ c50de6922b00677c93007c01924586de887ced7b@claude-fable-5
 ```bash
 curl http://127.0.0.1:8377/v1/chat/completions \
   -H "content-type: application/json" \
-  -d '{"model":"c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.7","messages":[{"role":"user","content":"REPLACE WITH YOUR REAL TASK"}]}'
+  -d '{"model":"c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol-pro","messages":[{"role":"user","content":"REPLACE WITH YOUR REAL TASK"}]}'
 ```
 
-Start with one of these featured services:
+Start with one of these current high-value services:
 
+- `gpt-5.6-sol-pro` - premium reasoning route
 - `claude-opus-4.7` - canonical Opus 4.7 alias
 - `opus-4.7` - official demand-name alias for the same upstream route
 - `claude-opus-4-7` - compatibility alias for the same upstream route
@@ -70,7 +69,6 @@ Start with one of these featured services:
 - `claude-opus-4-8-fast` - fast Opus route
 - `claude-opus-4.8` - frontier coding route
 - `glm-5.2` - multilingual route
-- `gpt-5.6-sol-pro` - premium reasoning route
 - `gpt-5.6-terra` - general reasoning route
 - `gpt-5.6-sol` - coding and agent route
 - `gemini-3-5-flash` - fast Gemini route
@@ -79,7 +77,7 @@ Start with one of these featured services:
 - `kimi-k3` - agent and coding route
 - `claude-fable-5` - current long-form and coding route
 
-[Demand evidence: AntSeed Top models by users, July 19](https://x.com/AntSeedAI/status/2078868465276874967).
+[Demand evidence: current upstream market feed](https://www.surplusintelligence.ai/api/inference/markets).
 
 Inspect the signed live catalog and pricing before use:
 
@@ -120,7 +118,7 @@ Suggested agent instruction:
 
 ```text
 Use AntFeed MCP to look up "NovaRoute AI". Verify
-seller 0xc50DE6922b00677c93007c01924586dE887ced7b, inspect claude-opus-4-8-fast first,
+seller 0xc50DE6922b00677c93007c01924586dE887ced7b, inspect gpt-5.6-sol-pro first,
 then claude-opus-4.7, opus-4.7, gpt-5.5, and glm-5.2 pricing, compare it with
 the signed direct peer catalog, and ask me before create_session.
 ```

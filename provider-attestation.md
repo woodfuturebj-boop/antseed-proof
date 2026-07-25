@@ -24,5 +24,5 @@ This repository is controlled by the GitHub account that publishes the AntSeed G
 - The upstream is Surplus Intelligence.
 - Current advertised services are managed by local price guard automation.
 - Buyers must explicitly pin this peer because AntSeed buyer auto-selection is disabled by default:
-  `antseed buyer connection set --peer c50de6922b00677c93007c01924586de887ced7b`
+  `antseed buyer start --peer c50de6922b00677c93007c01924586de887ced7b`
 - No private keys, API keys, or credentials are committed to this repository.
