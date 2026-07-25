@@ -1,0 +1,4 @@
+interface:
+  display_name: "NovaRoute AntSeed Buyer"
+  short_description: "Safely connect real workloads to NovaRoute AI"
+  default_prompt: "Use $novaroute-antseed-buyer to verify pricing and connect my approved real workload to NovaRoute AI."

@@ -146,7 +146,7 @@ opens the specialist route directly for provider and price review.
 ## Beta and Support
 
 - [24-hour external buyer guide](BETA.md)
-- [Guarded buyer skill for agents](skills/novaroute-antseed-buyer/SKILL.md)
+- [Installable guarded buyer skill for agents](skills/novaroute-antseed-buyer/)
 - [Beta overview and acceptance criteria](https://github.com/woodfuturebj-boop/antseed-proof/issues/1)
 - [External buyer beta](https://github.com/woodfuturebj-boop/antseed-proof/issues/new?template=beta.yml)
 - [Connection support](https://github.com/woodfuturebj-boop/antseed-proof/issues/new?template=support.yml)

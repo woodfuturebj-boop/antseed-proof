@@ -197,7 +197,7 @@ with the signed direct peer catalog, and ask me before create_session.
 ```
 
 Agents that can load repository skills can instead use the guarded
-[`novaroute-antseed-buyer` skill](skills/novaroute-antseed-buyer/SKILL.md). It
+[`novaroute-antseed-buyer` skill](skills/novaroute-antseed-buyer/). It
 performs read-only peer and price checks first and requires explicit user
 confirmation before funding or a paid real workload.
 
