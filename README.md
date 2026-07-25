@@ -52,9 +52,9 @@ c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-terra
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol
 c50de6922b00677c93007c01924586de887ced7b@gemini-3-5-flash
 c50de6922b00677c93007c01924586de887ced7b@glm-5.2
+c50de6922b00677c93007c01924586de887ced7b@minimax-m2.7
 c50de6922b00677c93007c01924586de887ced7b@kimi-k3
 c50de6922b00677c93007c01924586de887ced7b@claude-opus-4-8-fast
-c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.8
 c50de6922b00677c93007c01924586de887ced7b@claude-sonnet-5
 c50de6922b00677c93007c01924586de887ced7b@claude-fable-5
 ```
@@ -72,9 +72,9 @@ Copy-ready route pages:
 - [`gpt-5.6-terra`](https://woodfuturebj-boop.github.io/routes/gpt-5.6-terra/) - current-demand rank-one route; inspect signed live pricing before use
 - [`gemini-3-5-flash`](https://woodfuturebj-boop.github.io/routes/gemini-3-5-flash/) - current-demand rank-one route; inspect signed live pricing before use
 - [`glm-5.2`](https://woodfuturebj-boop.github.io/?model=glm-5.2#first-workload)
+- [`minimax-m2.7`](https://woodfuturebj-boop.github.io/routes/minimax-m2.7/) - eighth in AntSeed's official token-volume snapshot; inspect signed live pricing before use
 - [`kimi-k3`](https://woodfuturebj-boop.github.io/?model=kimi-k3#first-workload)
 - [`claude-opus-4-8-fast`](https://woodfuturebj-boop.github.io/routes/claude-opus-4-8-fast/) - fast route; inspect signed live pricing before use
-- [`claude-opus-4.8`](https://woodfuturebj-boop.github.io/?model=claude-opus-4.8#first-workload)
 - [`claude-sonnet-5`](https://woodfuturebj-boop.github.io/?model=claude-sonnet-5#first-workload)
 - [`claude-fable-5`](https://woodfuturebj-boop.github.io/?model=claude-fable-5#first-workload)
 
@@ -97,14 +97,15 @@ AntSeed's latest official sales snapshot with signed live pricing:
 - `gpt-5.6-sol-pro` - second-highest current reasoning volume; exact rank one
 - `opus-4.7` / `claude-opus-4.7` - current high-value Opus demand; exact rank one
 - `claude-sonnet-5` - high-value coding demand; exact rank one
-- `claude-opus-4.8` - high-value frontier coding demand; exact rank one
 - `claude-fable-5` - high-value long-form demand; exact rank one
 - `kimi-k3` - agent and coding demand; exact rank one
 - `glm-5.2` - highest request count in the current upstream sample
+- `minimax-m2.7` - eighth in AntSeed's official token-volume snapshot
 - `gpt-5.5` - strong request demand with signed live directory pricing
 - `gpt-5.4` - general reasoning demand; exact rank one
 
 [Official demand evidence: AntSeed Top models by sales](https://x.com/AntSeedAI/status/2081002378795377145).
+[Official demand evidence: AntSeed Top models by token volume](https://x.com/AntSeedAI/status/2077010692012470320).
 [Current exact-offer evidence](https://network.antseed.com/stats).
 
 The broader catalog remains advertised for compatibility. Featured status is an

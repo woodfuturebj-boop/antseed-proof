@@ -53,9 +53,9 @@ c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-terra
 c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol
 c50de6922b00677c93007c01924586de887ced7b@gemini-3-5-flash
 c50de6922b00677c93007c01924586de887ced7b@glm-5.2
+c50de6922b00677c93007c01924586de887ced7b@minimax-m2.7
 c50de6922b00677c93007c01924586de887ced7b@kimi-k3
 c50de6922b00677c93007c01924586de887ced7b@claude-opus-4-8-fast
-c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.8
 c50de6922b00677c93007c01924586de887ced7b@claude-sonnet-5
 c50de6922b00677c93007c01924586de887ced7b@claude-fable-5
 c50de6922b00677c93007c01924586de887ced7b@novaroute-code-audit-v1
@@ -78,8 +78,8 @@ Start with one of these current high-value services:
 - `claude-opus-4-7` - compatibility alias for the same upstream route
 - `gpt-5.5` - general and coding route
 - `claude-opus-4-8-fast` - fast Opus route
-- `claude-opus-4.8` - frontier coding route
 - `glm-5.2` - multilingual route
+- `minimax-m2.7` - eighth in AntSeed's official token-volume snapshot
 - `gpt-5.6-terra` - general reasoning route
 - `gemini-3-5-flash` - fast Gemini route
 - `claude-sonnet-5` - coding and agent route
@@ -90,6 +90,7 @@ Start with one of these current high-value services:
   transaction-safety, and release-readiness review agent
 
 [Official demand evidence: AntSeed Top models by sales](https://x.com/AntSeedAI/status/2081002378795377145).
+[Official demand evidence: AntSeed Top models by token volume](https://x.com/AntSeedAI/status/2077010692012470320).
 [Current exact-offer evidence](https://network.antseed.com/stats).
 
 Inspect the signed live catalog and pricing before use:
@@ -171,7 +172,7 @@ Use AntFeed MCP to look up "NovaRoute AI". Verify
 seller 0xc50DE6922b00677c93007c01924586dE887ced7b. For a real code, Web3
 transaction-safety, or release-readiness review, inspect
 novaroute-code-audit-v1 first. Otherwise inspect claude-opus-4.6,
-gpt-5.6-sol, opus-4.7, and gpt-5.5 pricing. Compare the result
+minimax-m2.7, gpt-5.6-sol, opus-4.7, and gpt-5.5 pricing. Compare the result
 with the signed direct peer catalog, and ask me before create_session.
 ```
 

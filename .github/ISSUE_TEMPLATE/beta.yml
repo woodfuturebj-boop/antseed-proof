@@ -45,7 +45,7 @@ body:
     id: model
     attributes:
       label: Preferred model
-      description: Start with claude-opus-4.6, first in AntSeed's latest official model-sales snapshot and the lowest-priced indexed exact offer from this peer. Other routes remain available in the signed catalog.
+      description: Start with claude-opus-4.6, first in AntSeed's latest official model-sales snapshot. For a high-volume alternative, minimax-m2.7 ranks eighth in the official token-volume snapshot. Confirm the signed live price before use.
       placeholder: claude-opus-4.6
     validations:
       required: true
