@@ -270,6 +270,28 @@ runtime. Keep individual tool approvals enabled and start only with a real
 task. See the [official custom endpoint guide](https://jan.ai/docs/desktop/remote-models/custom-endpoint)
 and [official MCP guide](https://jan.ai/docs/desktop/mcp).
 
+AnythingLLM Desktop can use the selected route through its Generic OpenAI
+provider:
+
+```text
+Settings > AI Providers > LLM
+LLM Provider: Generic OpenAI
+Base URL: http://127.0.0.1:8377/v1
+API Key: antseed-local
+Selected Model: c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6
+Model context window: 8192
+Max Tokens: 1024
+```
+
+The settings UI calls only the free local `/v1/models` catalog and preserves
+the selected model ID. The current Generic OpenAI agent provider enables native
+tool calling by default and sends tools only for a real agent request; no
+setup inference probe is needed. Use the desktop app for this localhost path,
+because Docker's `127.0.0.1` refers to the container itself. Open a workspace
+and begin with a real task; use `@agent` only when that task needs tools. See
+the [official Generic OpenAI guide](https://docs.anythingllm.com/setup/llm-configuration/cloud/openai-generic)
+and [official agent overview](https://docs.anythingllm.com/agent/overview).
+
 Do not use a test prompt. The first paid request must be the real task the user
 already approved.
 

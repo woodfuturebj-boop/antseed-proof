@@ -141,6 +141,14 @@ does not infer custom-model capabilities, so edit the model and enable
 enabled and begin only with a real task. See the
 [official Jan custom endpoint guide](https://jan.ai/docs/desktop/remote-models/custom-endpoint).
 
+AnythingLLM Desktop users can select **Generic OpenAI** with base URL
+`http://127.0.0.1:8377/v1`, placeholder key `antseed-local`, and the exact
+`c50de6922b00677c93007c01924586de887ced7b@<service-id>` model from the free
+local `/v1/models` catalog. The runtime preserves the model ID and uses native
+OpenAI tool calls for real agent work. This localhost path is for Desktop;
+Docker's `127.0.0.1` points inside its container. Begin only with a real
+workspace task. See the [official Generic OpenAI guide](https://docs.anythingllm.com/setup/llm-configuration/cloud/openai-generic).
+
 ## Provider
 
 - Network display name: `NovaRoute AI`

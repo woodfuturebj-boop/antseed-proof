@@ -171,6 +171,15 @@ enable **Tools**, and save the local capability flag without sending a test
 prompt. Keep individual MCP tool approvals enabled and begin only with a real
 task.
 
+For AnythingLLM Desktop, select **Generic OpenAI** with base URL
+`http://127.0.0.1:8377/v1`, API key `antseed-local`, model
+`c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6`, context window
+`8192`, and max tokens `1024`. Setup reads only the free local `/v1/models`
+catalog. The runtime preserves the model ID and supports native agent tools.
+Do not use this localhost configuration in Docker, and do not send a test
+prompt. Begin only with a real workspace task; use `@agent` only when that
+task needs tools.
+
 These commands configure a route. Run them only for a concrete workload the
 user has approved; do not send a verification or test prompt.
 
