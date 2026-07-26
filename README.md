@@ -120,6 +120,17 @@ Skip both checks, retain the peer prefix, and begin only with a real task. Use
 a service with native OpenAI tool calling for MCP-backed work. See the
 [official Cherry Studio custom provider guide](https://docs.cherry-ai.com/docs/en-us/pre-basic/providers/zi-ding-yi-fu-wu-shang).
 
+Chatbox users can open the route-specific `chatbox://provider/import` preview
+from the buyer page. It carries provider ID `novaroute-antseed`, API host
+`http://127.0.0.1:8377`, placeholder key `antseed-local`, and an explicit
+`c50de6922b00677c93007c01924586de887ced7b@<service-id>` chat model with
+`tool_use` enabled. The preview is read-only until **Save**, and an existing
+provider with the same ID triggers an overwrite warning. Do not use **Check**
+or **Test Model** because they send paid text, vision, and tool probes. The
+optional **Fetch** action reads only the free local `/v1/models` catalog and is
+not needed for this imported route. See the
+[official Chatbox provider guide](https://docs.chatboxai.app/en/guides/providers).
+
 ## Provider
 
 - Network display name: `NovaRoute AI`

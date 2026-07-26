@@ -152,6 +152,16 @@ free local catalog, but **Check** or **Detect** sends a paid inference probe.
 Do not use either check. Retain the peer prefix, choose a service with native
 OpenAI tool calling for MCP-backed work, and begin only with a real task.
 
+For Chatbox, use the route-specific `chatbox://provider/import` preview on the
+public buyer page. It imports provider ID `novaroute-antseed`, API host
+`http://127.0.0.1:8377`, API key `antseed-local`, and model
+`c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6` with model type
+**Chat** and **Tool use** enabled. Review the read-only preview and choose
+**Save**; an existing provider with the same ID triggers an overwrite warning.
+Do not click **Check** or **Test Model**, which send paid text, vision, and tool
+probes. **Fetch** only reads the free local `/v1/models` catalog and is not
+required. Begin only with a real task.
+
 These commands configure a route. Run them only for a concrete workload the
 user has approved; do not send a verification or test prompt.
 

@@ -225,6 +225,30 @@ the peer-prefixed model, use a service with native OpenAI tool calling for MCP
 work, and begin only with a real task. See Cherry Studio's
 [official custom provider guide](https://docs.cherry-ai.com/docs/en-us/pre-basic/providers/zi-ding-yi-fu-wu-shang).
 
+Chatbox can open a reviewed one-click import preview from the public buyer
+page. The generated configuration contains:
+
+```text
+Provider ID: novaroute-antseed
+Provider name: NovaRoute AI
+API mode: OpenAI API Compatible
+API key: antseed-local
+API Host: http://127.0.0.1:8377
+API Path: leave blank
+Model ID: c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6
+Model type: Chat
+Capability: Tool use
+```
+
+The official `chatbox://provider/import` flow shows these values read-only and
+does not write settings until **Save**. Re-importing provider ID
+`novaroute-antseed` shows an overwrite warning. Chatbox normalizes the blank
+path to `/v1/chat/completions`, preserves the model ID, and passes native tools
+to the OpenAI-compatible runtime. Do not click **Check** or **Test Model**:
+those actions send separate text, vision, and tool inference probes. **Fetch**
+only reads the free local `/v1/models` catalog and is not required. See the
+[official provider guide](https://docs.chatboxai.app/en/guides/providers).
+
 Do not use a test prompt. The first paid request must be the real task the user
 already approved.
 
