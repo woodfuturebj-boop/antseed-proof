@@ -249,6 +249,27 @@ those actions send separate text, vision, and tool inference probes. **Fetch**
 only reads the free local `/v1/models` catalog and is not required. See the
 [official provider guide](https://docs.chatboxai.app/en/guides/providers).
 
+Jan supports OpenAI-compatible custom endpoints with this route:
+
+```text
+Settings > Model Providers > Add Provider
+Provider name: NovaRoute AI
+API format: OpenAI-compatible
+Base URL: http://127.0.0.1:8377/v1
+API key: antseed-local
+Model ID: c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6
+Edit model > Tools: on > Save
+```
+
+Jan calls only the free local `{base_url}/models` endpoint while creating the
+provider, refreshing models, or testing the placeholder key. The selected
+model ID is preserved in Chat Completions. Custom-provider capabilities are
+not inferred, so the **Tools** switch only saves a local capability flag; it
+does not require a test prompt. Jan passes enabled MCP tools to the model at
+runtime. Keep individual tool approvals enabled and start only with a real
+task. See the [official custom endpoint guide](https://jan.ai/docs/desktop/remote-models/custom-endpoint)
+and [official MCP guide](https://jan.ai/docs/desktop/mcp).
+
 Do not use a test prompt. The first paid request must be the real task the user
 already approved.
 

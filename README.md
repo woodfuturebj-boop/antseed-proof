@@ -131,6 +131,16 @@ optional **Fetch** action reads only the free local `/v1/models` catalog and is
 not needed for this imported route. See the
 [official Chatbox provider guide](https://docs.chatboxai.app/en/guides/providers).
 
+Jan users can add an **OpenAI-compatible** custom provider named `NovaRoute AI`
+with base URL `http://127.0.0.1:8377/v1`, placeholder API key
+`antseed-local`, and the exact
+`c50de6922b00677c93007c01924586de887ced7b@<service-id>` model. Provider
+creation and key testing read only the free local `/v1/models` catalog. Jan
+does not infer custom-model capabilities, so edit the model and enable
+**Tools** locally before MCP-backed work. Keep individual tool approvals
+enabled and begin only with a real task. See the
+[official Jan custom endpoint guide](https://jan.ai/docs/desktop/remote-models/custom-endpoint).
+
 ## Provider
 
 - Network display name: `NovaRoute AI`

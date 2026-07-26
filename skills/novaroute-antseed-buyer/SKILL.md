@@ -162,6 +162,15 @@ Do not click **Check** or **Test Model**, which send paid text, vision, and tool
 probes. **Fetch** only reads the free local `/v1/models` catalog and is not
 required. Begin only with a real task.
 
+For Jan, add an **OpenAI-compatible** custom provider named `NovaRoute AI`
+with base URL `http://127.0.0.1:8377/v1`, API key `antseed-local`, and model
+`c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6`. Provider
+creation, model refresh, and key testing read only the free local `/v1/models`
+catalog. Jan does not infer custom-model capabilities, so edit the model,
+enable **Tools**, and save the local capability flag without sending a test
+prompt. Keep individual MCP tool approvals enabled and begin only with a real
+task.
+
 These commands configure a route. Run them only for a concrete workload the
 user has approved; do not send a verification or test prompt.
 
