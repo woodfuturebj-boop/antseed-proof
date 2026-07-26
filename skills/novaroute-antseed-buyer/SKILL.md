@@ -153,7 +153,8 @@ Do not use either check. Retain the peer prefix, choose a service with native
 OpenAI tool calling for MCP-backed work, and begin only with a real task.
 
 For Chatbox, use the route-specific `chatbox://provider/import` preview on the
-public buyer page. It imports provider ID `novaroute-antseed`, API host
+[direct public buyer page](https://woodfuturebj-boop.github.io/?integration=chatbox#integrations).
+It imports provider ID `novaroute-antseed`, API host
 `http://127.0.0.1:8377`, API key `antseed-local`, and model
 `c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6` with model type
 **Chat** and **Tool use** enabled. Review the read-only preview and choose
@@ -162,7 +163,8 @@ Do not click **Check** or **Test Model**, which send paid text, vision, and tool
 probes. **Fetch** only reads the free local `/v1/models` catalog and is not
 required. Begin only with a real task.
 
-For Jan, add an **OpenAI-compatible** custom provider named `NovaRoute AI`
+For Jan, open the [direct buyer panel](https://woodfuturebj-boop.github.io/?integration=jan#integrations)
+and add an **OpenAI-compatible** custom provider named `NovaRoute AI`
 with base URL `http://127.0.0.1:8377/v1`, API key `antseed-local`, and model
 `c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6`. Provider
 creation, model refresh, and key testing read only the free local `/v1/models`
@@ -171,7 +173,9 @@ enable **Tools**, and save the local capability flag without sending a test
 prompt. Keep individual MCP tool approvals enabled and begin only with a real
 task.
 
-For AnythingLLM Desktop, select **Generic OpenAI** with base URL
+For AnythingLLM Desktop, open the
+[direct buyer panel](https://woodfuturebj-boop.github.io/?integration=anythingllm#integrations)
+and select **Generic OpenAI** with base URL
 `http://127.0.0.1:8377/v1`, API key `antseed-local`, model
 `c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6`, context window
 `8192`, and max tokens `1024`. Setup reads only the free local `/v1/models`

@@ -225,8 +225,9 @@ the peer-prefixed model, use a service with native OpenAI tool calling for MCP
 work, and begin only with a real task. See Cherry Studio's
 [official custom provider guide](https://docs.cherry-ai.com/docs/en-us/pre-basic/providers/zi-ding-yi-fu-wu-shang).
 
-Chatbox can open a reviewed one-click import preview from the public buyer
-page. The generated configuration contains:
+Chatbox can open a reviewed one-click import preview from the
+[direct public buyer route](https://woodfuturebj-boop.github.io/?integration=chatbox#integrations).
+The generated configuration contains:
 
 ```text
 Provider ID: novaroute-antseed
@@ -249,7 +250,8 @@ those actions send separate text, vision, and tool inference probes. **Fetch**
 only reads the free local `/v1/models` catalog and is not required. See the
 [official provider guide](https://docs.chatboxai.app/en/guides/providers).
 
-Jan supports OpenAI-compatible custom endpoints with this route:
+Jan supports OpenAI-compatible custom endpoints through the
+[direct Jan buyer route](https://woodfuturebj-boop.github.io/?integration=jan#integrations):
 
 ```text
 Settings > Model Providers > Add Provider
@@ -270,8 +272,8 @@ runtime. Keep individual tool approvals enabled and start only with a real
 task. See the [official custom endpoint guide](https://jan.ai/docs/desktop/remote-models/custom-endpoint)
 and [official MCP guide](https://jan.ai/docs/desktop/mcp).
 
-AnythingLLM Desktop can use the selected route through its Generic OpenAI
-provider:
+AnythingLLM Desktop can use the selected route through its
+[direct Generic OpenAI panel](https://woodfuturebj-boop.github.io/?integration=anythingllm#integrations):
 
 ```text
 Settings > AI Providers > LLM

@@ -121,7 +121,8 @@ a service with native OpenAI tool calling for MCP-backed work. See the
 [official Cherry Studio custom provider guide](https://docs.cherry-ai.com/docs/en-us/pre-basic/providers/zi-ding-yi-fu-wu-shang).
 
 Chatbox users can open the route-specific `chatbox://provider/import` preview
-from the buyer page. It carries provider ID `novaroute-antseed`, API host
+from the [direct Chatbox buyer route](https://woodfuturebj-boop.github.io/?integration=chatbox#integrations).
+It carries provider ID `novaroute-antseed`, API host
 `http://127.0.0.1:8377`, placeholder key `antseed-local`, and an explicit
 `c50de6922b00677c93007c01924586de887ced7b@<service-id>` chat model with
 `tool_use` enabled. The preview is read-only until **Save**, and an existing
@@ -140,6 +141,8 @@ does not infer custom-model capabilities, so edit the model and enable
 **Tools** locally before MCP-backed work. Keep individual tool approvals
 enabled and begin only with a real task. See the
 [official Jan custom endpoint guide](https://jan.ai/docs/desktop/remote-models/custom-endpoint).
+The [direct Jan buyer route](https://woodfuturebj-boop.github.io/?integration=jan#integrations)
+opens this panel immediately.
 
 AnythingLLM Desktop users can select **Generic OpenAI** with base URL
 `http://127.0.0.1:8377/v1`, placeholder key `antseed-local`, and the exact
@@ -148,6 +151,8 @@ local `/v1/models` catalog. The runtime preserves the model ID and uses native
 OpenAI tool calls for real agent work. This localhost path is for Desktop;
 Docker's `127.0.0.1` points inside its container. Begin only with a real
 workspace task. See the [official Generic OpenAI guide](https://docs.anythingllm.com/setup/llm-configuration/cloud/openai-generic).
+The [direct AnythingLLM buyer route](https://woodfuturebj-boop.github.io/?integration=anythingllm#integrations)
+opens this panel immediately.
 
 ## Provider
 
