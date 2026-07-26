@@ -111,6 +111,15 @@ the peer prefix, skip the provider test, and begin only with a real repository
 task. See the
 [official Goose provider guide](https://goose-docs.ai/docs/getting-started/providers/#configure-custom-provider).
 
+Cherry Studio users can add a custom **OpenAI** provider with API address
+`http://127.0.0.1:8377`, placeholder API key `antseed-local`, and a manually
+added `c50de6922b00677c93007c01924586de887ced7b@<service-id>` model ID. Cherry
+Studio appends `/v1` to this root address. Adding or listing models reads only
+the free local catalog, but **Check** or **Detect** sends an inference probe.
+Skip both checks, retain the peer prefix, and begin only with a real task. Use
+a service with native OpenAI tool calling for MCP-backed work. See the
+[official Cherry Studio custom provider guide](https://docs.cherry-ai.com/docs/en-us/pre-basic/providers/zi-ding-yi-fu-wu-shang).
+
 ## Provider
 
 - Network display name: `NovaRoute AI`

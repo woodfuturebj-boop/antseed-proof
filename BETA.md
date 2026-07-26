@@ -207,6 +207,24 @@ context metadata. Keep the peer-prefixed model, do not run the provider test,
 and begin only with a real repository task. See Goose's
 [official provider guide](https://goose-docs.ai/docs/getting-started/providers/#configure-custom-provider).
 
+Cherry Studio can add a custom provider with these fields:
+
+```text
+Provider name: NovaRoute AI
+Provider type: OpenAI
+API key: antseed-local
+API address: http://127.0.0.1:8377
+Model ID (manual): c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6
+Provider: enabled
+```
+
+Cherry Studio appends `/v1` to the root API address. Adding a model manually
+or listing models reads only the free local catalog. Do not click **Check** or
+**Detect**: the official implementation sends a minimal inference probe. Keep
+the peer-prefixed model, use a service with native OpenAI tool calling for MCP
+work, and begin only with a real task. See Cherry Studio's
+[official custom provider guide](https://docs.cherry-ai.com/docs/en-us/pre-basic/providers/zi-ding-yi-fu-wu-shang).
+
 Do not use a test prompt. The first paid request must be the real task the user
 already approved.
 

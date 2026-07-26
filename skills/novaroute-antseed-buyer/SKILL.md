@@ -144,6 +144,14 @@ read only the free local `/v1/models` catalog for discovery or context
 metadata. Retain the peer prefix, skip the provider test, and begin only with
 a real repository task.
 
+For Cherry Studio, add a custom **OpenAI** provider with API address
+`http://127.0.0.1:8377`, API key `antseed-local`, and manually add model
+`c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6`. Cherry Studio
+appends `/v1` to this root address. Adding or listing models reads only the
+free local catalog, but **Check** or **Detect** sends a paid inference probe.
+Do not use either check. Retain the peer prefix, choose a service with native
+OpenAI tool calling for MCP-backed work, and begin only with a real task.
+
 These commands configure a route. Run them only for a concrete workload the
 user has approved; do not send a verification or test prompt.
 
