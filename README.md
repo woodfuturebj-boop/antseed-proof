@@ -168,9 +168,12 @@ opens this panel immediately.
 The buyer page prioritizes current high-value services. The order below combines
 AntSeed's latest official sales snapshot with signed live pricing:
 
-Each service can be compared directly at
-`https://www.antfeed.org/services/<service-id>`. Confirm NovaRoute AI and the
-signed live price before opening a paid session.
+Inspect NovaRoute AI through the stable
+[AntFeed seller profile](https://www.antfeed.org/sellers/0xc50de6922b00677c93007c01924586de887ced7b),
+then search the exact service ID in the
+[AntFeed service directory](https://www.antfeed.org/services) when a market
+comparison is needed. Confirm the signed live price before opening a paid
+session.
 
 - `claude-opus-4.6` - first in the latest official model-sales snapshot; signed live directory pricing
 - `gpt-5.6-sol` - highest upstream dollar volume in the current market sample; exact rank one
@@ -206,8 +209,9 @@ endpoints. The [external buyer guide](BETA.md#agent-path-antfeed-mcp-read-only-d
 connects discovery to the verified direct buyer path. The
 [direct seller profile](https://www.antfeed.org/sellers/0xc50de6922b00677c93007c01924586de887ced7b)
 bypasses directory ordering for read-only inspection.
-The [audit-service comparison](https://www.antfeed.org/services/novaroute-code-audit-v1)
-opens the specialist route directly for provider and price review.
+Search `novaroute-code-audit-v1` in the
+[AntFeed service directory](https://www.antfeed.org/services) for provider and
+price review, then confirm the signed live catalog.
 
 ## Operating Policy
 

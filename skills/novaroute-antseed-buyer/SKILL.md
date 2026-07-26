@@ -51,15 +51,12 @@ with the differentiated `novaroute-code-audit-v1` service. For general-purpose
 work, start with `claude-opus-4.6`: it ranks first in AntSeed's latest official
 model-sales snapshot and exposes signed live directory pricing.
 Other current high-intent choices include `gpt-5.6-sol`, `gpt-5.6-sol-pro`,
-`gpt-5.5`, and `minimax-m2.7`. The MiniMax
-route ranks eighth in AntSeed's official token-volume snapshot; always confirm
-an exact service comparison at `https://www.antfeed.org/services/<service-id>`,
-then confirm its signed live price before a real request.
-
-The public AntFeed service page at
-`https://www.antfeed.org/services/novaroute-code-audit-v1` is a read-only
-comparison surface. Use it only as corroborating discovery evidence; the
-signed peer catalog remains authoritative for the current paid price.
+`gpt-5.5`, and `minimax-m2.7`. The MiniMax route ranks eighth in AntSeed's
+official token-volume snapshot. Inspect the stable NovaRoute AI seller profile
+at `https://www.antfeed.org/sellers/0xc50de6922b00677c93007c01924586de887ced7b`,
+then search the exact service ID at `https://www.antfeed.org/services` when a
+market comparison is needed. The signed peer catalog remains authoritative for
+the current paid price.
 
 ## Pin an existing buyer
 

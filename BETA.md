@@ -105,9 +105,12 @@ Start with one of these current high-value services:
 - `novaroute-code-audit-v1` - differentiated read-only code, Web3
   transaction-safety, and release-readiness review agent
 
-For any service above, open its exact AntFeed comparison at
-`https://www.antfeed.org/services/<service-id>`, confirm NovaRoute AI and the
-signed live price, then pin the peer before the paid session.
+For any service above, inspect the stable NovaRoute AI
+[seller profile](https://www.antfeed.org/sellers/0xc50de6922b00677c93007c01924586de887ced7b),
+then search the exact service ID in the
+[AntFeed service directory](https://www.antfeed.org/services) when a market
+comparison is needed. Confirm the signed live price, then pin the peer before
+the paid session.
 
 [Official demand evidence: AntSeed Top models by sales](https://x.com/AntSeedAI/status/2081002378795377145).
 [Official demand evidence: AntSeed Top models by token volume](https://x.com/AntSeedAI/status/2077010692012470320).
@@ -306,9 +309,10 @@ Open the [direct AntFeed seller profile](https://www.antfeed.org/sellers/0xc50de
 to inspect the address, aggregate history, and advertised services without
 depending on directory ordering.
 
-For a real code, Web3 transaction-safety, or release-readiness review, use the
-[direct audit-service comparison](https://www.antfeed.org/services/novaroute-code-audit-v1)
-to verify the provider and displayed price before considering a paid session.
+For a real code, Web3 transaction-safety, or release-readiness review, search
+`novaroute-code-audit-v1` in the
+[AntFeed service directory](https://www.antfeed.org/services), verify the
+provider, then confirm the signed live price before considering a paid session.
 
 Add this read-only discovery config to Claude Code, Claude Desktop, Cursor,
 Cline, or another MCP host:
