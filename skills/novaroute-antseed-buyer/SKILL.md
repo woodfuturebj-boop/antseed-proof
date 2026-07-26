@@ -130,6 +130,13 @@ For Kilo Code, add a custom provider with ID `antseed`, display name
 the free local `/v1/models` catalog; retain the manual peer-prefixed ID and do
 not use a synthetic verification prompt.
 
+For Zoo Code, select **OpenAI Compatible**, enter base URL
+`http://127.0.0.1:8377/v1` and API key `antseed-local`, then choose custom model
+ID `c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6`. Zoo Code reads
+only the free local `/v1/models` catalog during setup. Retain the peer-prefixed
+ID, use a service with native OpenAI tool calling, and do not send a synthetic
+verification prompt.
+
 These commands configure a route. Run them only for a concrete workload the
 user has approved; do not send a verification or test prompt.
 

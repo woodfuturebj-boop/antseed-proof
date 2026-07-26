@@ -95,6 +95,14 @@ the peer prefix even if Kilo auto-fetches bare service names from the free
 model catalog. See the
 [official Kilo guide](https://kilo.ai/docs/ai-providers/openai-compatible).
 
+Zoo Code users can select **OpenAI Compatible**, use the same local Base URL
+and placeholder API key, and choose a custom
+`c50de6922b00677c93007c01924586de887ced7b@<service-id>` Model ID. Its settings
+refresh reads only the free local `/v1/models` catalog. Keep the peer prefix,
+use a service with native OpenAI tool calling, and make the first paid request
+a real task. See the
+[official Zoo Code guide](https://docs.zoocode.dev/providers/openai-compatible).
+
 ## Provider
 
 - Network display name: `NovaRoute AI`

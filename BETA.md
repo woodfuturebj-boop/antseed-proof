@@ -177,6 +177,20 @@ Kilo may query the free local `/v1/models` catalog during setup. Keep the
 manual peer-prefixed model ID and do not send a synthetic verification prompt.
 See Kilo's [official guide](https://kilo.ai/docs/ai-providers/openai-compatible).
 
+Zoo Code can select **OpenAI Compatible** and use:
+
+```text
+Base URL: http://127.0.0.1:8377/v1
+API Key: antseed-local
+Model ID (custom): c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6
+```
+
+Zoo Code waits 250 ms after the Base URL or API key changes, then reads only
+the free local `/v1/models` catalog. Select the custom peer-prefixed model ID,
+use a service with native OpenAI tool calling, and do not send a synthetic
+verification prompt. See Zoo Code's
+[official guide](https://docs.zoocode.dev/providers/openai-compatible).
+
 Do not use a test prompt. The first paid request must be the real task the user
 already approved.
 
