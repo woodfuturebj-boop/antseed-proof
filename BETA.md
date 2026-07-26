@@ -191,6 +191,22 @@ use a service with native OpenAI tool calling, and do not send a synthetic
 verification prompt. See Zoo Code's
 [official guide](https://docs.zoocode.dev/providers/openai-compatible).
 
+Goose can add a custom provider with these fields:
+
+```text
+Provider type: OpenAI Compatible
+Display name: NovaRoute AI
+API URL: http://127.0.0.1:8377/v1
+Requires API key: off
+Model: c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6
+Streaming: on
+```
+
+Goose may read only the free local `/v1/models` catalog for model discovery or
+context metadata. Keep the peer-prefixed model, do not run the provider test,
+and begin only with a real repository task. See Goose's
+[official provider guide](https://goose-docs.ai/docs/getting-started/providers/#configure-custom-provider).
+
 Do not use a test prompt. The first paid request must be the real task the user
 already approved.
 

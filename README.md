@@ -103,6 +103,14 @@ use a service with native OpenAI tool calling, and make the first paid request
 a real task. See the
 [official Zoo Code guide](https://docs.zoocode.dev/providers/openai-compatible).
 
+Goose users can add a custom **OpenAI Compatible** provider with API URL
+`http://127.0.0.1:8377/v1`, API-key requirement disabled, streaming enabled,
+and model `c50de6922b00677c93007c01924586de887ced7b@<service-id>`. Goose may read
+the free local `/v1/models` catalog for discovery or context metadata. Keep
+the peer prefix, skip the provider test, and begin only with a real repository
+task. See the
+[official Goose provider guide](https://goose-docs.ai/docs/getting-started/providers/#configure-custom-provider).
+
 ## Provider
 
 - Network display name: `NovaRoute AI`

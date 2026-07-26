@@ -137,6 +137,13 @@ only the free local `/v1/models` catalog during setup. Retain the peer-prefixed
 ID, use a service with native OpenAI tool calling, and do not send a synthetic
 verification prompt.
 
+For Goose, add a custom **OpenAI Compatible** provider with API URL
+`http://127.0.0.1:8377/v1`, API-key requirement disabled, streaming enabled,
+and model `c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6`. Goose may
+read only the free local `/v1/models` catalog for discovery or context
+metadata. Retain the peer prefix, skip the provider test, and begin only with
+a real repository task.
+
 These commands configure a route. Run them only for a concrete workload the
 user has approved; do not send a verification or test prompt.
 
