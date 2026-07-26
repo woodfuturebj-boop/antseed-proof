@@ -88,6 +88,13 @@ Cline users can choose **OpenAI Compatible**, point the Base URL to
 request must be a real task, not a connection test. See the
 [official Cline guide](https://docs.cline.bot/provider-config/openai-compatible).
 
+Kilo Code users can add a custom `antseed` provider using **OpenAI
+Compatible**, the same local Base URL and placeholder API key, and a manually
+added `c50de6922b00677c93007c01924586de887ced7b@<service-id>` Model ID. Keep
+the peer prefix even if Kilo auto-fetches bare service names from the free
+model catalog. See the
+[official Kilo guide](https://kilo.ai/docs/ai-providers/openai-compatible).
+
 ## Provider
 
 - Network display name: `NovaRoute AI`

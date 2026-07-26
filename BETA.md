@@ -162,6 +162,21 @@ Entering the Base URL and API key may refresh Cline's free local model catalog.
 It must not be followed by a synthetic verification prompt. See Cline's
 [official OpenAI Compatible guide](https://docs.cline.bot/provider-config/openai-compatible).
 
+Kilo Code can add a custom provider with these fields:
+
+```text
+Provider ID: antseed
+Display name: NovaRoute AI
+Provider API: OpenAI Compatible
+Base URL: http://127.0.0.1:8377/v1
+API Key: antseed-local
+Model ID (manual): c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6
+```
+
+Kilo may query the free local `/v1/models` catalog during setup. Keep the
+manual peer-prefixed model ID and do not send a synthetic verification prompt.
+See Kilo's [official guide](https://kilo.ai/docs/ai-providers/openai-compatible).
+
 Do not use a test prompt. The first paid request must be the real task the user
 already approved.
 
