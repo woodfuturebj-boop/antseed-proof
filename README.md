@@ -50,20 +50,21 @@ For a single real workload without replacing a saved connection, use one of the
 current high-demand direct routes:
 
 ```text
-c50de6922b00677c93007c01924586de887ced7b@claude-opus-4.6
-c50de6922b00677c93007c01924586de887ced7b@gpt-5.4
-c50de6922b00677c93007c01924586de887ced7b@gpt-5.5
-c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol-pro
-c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-terra
-c50de6922b00677c93007c01924586de887ced7b@gpt-5.6-sol
-c50de6922b00677c93007c01924586de887ced7b@gemini-3-5-flash
-c50de6922b00677c93007c01924586de887ced7b@glm-5.2
-c50de6922b00677c93007c01924586de887ced7b@minimax-m2.7
+c50de6922b00677c93007c01924586de887ced7b@gpt-6-astra
+c50de6922b00677c93007c01924586de887ced7b@claude-opus-5.5
+c50de6922b00677c93007c01924586de887ced7b@gpt-6.1-sol
+c50de6922b00677c93007c01924586de887ced7b@glm-5.3
+c50de6922b00677c93007c01924586de887ced7b@deepseek-v4.1-flash
 c50de6922b00677c93007c01924586de887ced7b@kimi-k3
-c50de6922b00677c93007c01924586de887ced7b@claude-opus-4-8-fast
+c50de6922b00677c93007c01924586de887ced7b@kimi-k3.1-pro
+c50de6922b00677c93007c01924586de887ced7b@claude-sonnet-5.5
 c50de6922b00677c93007c01924586de887ced7b@claude-sonnet-5
-c50de6922b00677c93007c01924586de887ced7b@claude-fable-5
+c50de6922b00677c93007c01924586de887ced7b@gpt-6.2-sol
+c50de6922b00677c93007c01924586de887ced7b@gemini-4-argon
+c50de6922b00677c93007c01924586de887ced7b@openai-gpt-oss-20b
 ```
+
+Free tier: `openai-gpt-oss-20b` is offered at `$0 / $0 / $0` (60 requests/day per buyer address, 10x to unlimited for NovaRoute AI ANTS pool stakers). All 76 standard paid text services run on AntSeed CLI `0.1.259` with metadata v12, live health probes, and native `openai-chat-completions`, `openai-responses`, and `anthropic-messages` support.
 
 Copy-ready route pages:
 
@@ -203,10 +204,7 @@ The signed peer catalog is the source of truth. AntFeed refreshes its provider
 directory hourly, and other discovery pages can cache older prices, so verify this command before
 funding or creating a paid session.
 
-Use AntFeed MCP `0.2.5` only for read-only discovery with AntSeed CLI
-`0.1.136`; the CLI does not expose the MCP bridge's `/health` and `/sessions`
-endpoints. The [external buyer guide](BETA.md#agent-path-antfeed-mcp-read-only-discovery)
-connects discovery to the verified direct buyer path. The
+NovaRoute AI runs AntSeed CLI `0.1.259` with metadata v12, live model health probes, a `$0` free tier (`openai-gpt-oss-20b`), and native OpenAI Chat Completions, OpenAI Responses, and Anthropic Messages support. The [external buyer guide](BETA.md#agent-path-antfeed-mcp-read-only-discovery) connects discovery to the verified direct buyer path. The
 [direct seller profile](https://www.antfeed.org/sellers/0xc50de6922b00677c93007c01924586de887ced7b)
 bypasses directory ordering for read-only inspection.
 Search `novaroute-code-audit-v1` in the
